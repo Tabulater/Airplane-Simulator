@@ -21,6 +21,8 @@
 #include <osgGA/AnimationPathManipulator>
 #include <osgGA/TerrainManipulator>
 
+#include "HUDSystem.h"
+
 // Flight state
 enum class FlightState {
     COLD_AND_DARK,
@@ -240,13 +242,24 @@ public:
         // Create a root node
         osg::ref_ptr<osg::Group> root = new osg::Group;
         
-        // Add a simple model (replace with your aircraft model)
+            // Add a simple model (replace with your aircraft model)
         osg::ref_ptr<osg::Node> model = osgDB::readNodeFile("cessna.osg");
         if (model.valid()) {
             root->addChild(model);
         } else {
             qWarning() << "Failed to load model";
+            // Create a simple placeholder if model fails to load
+            osg::ref_ptr<osg::Geode> geode = new osg::Geode;
+            geode->addDrawable(new osg::ShapeDrawable(new osg::Box(osg::Vec3(0.0f, 0.0f, 1.0f), 2.0f)));
+            root->addChild(geode);
         }
+        
+        // Create and initialize the HUD system
+        osg::ref_ptr<HUDSystem> hudSystem = new HUDSystem(this);
+        if (!hudSystem->initialize("data/hud/hud_config.xml")) {
+            qWarning() << "Failed to initialize HUD system";
+        }
+        root->addChild(hudSystem);
         
         setSceneData(root);
     }

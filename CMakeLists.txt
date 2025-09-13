@@ -8,7 +8,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Find required packages
 find_package(Qt5 COMPONENTS Core Gui Widgets OpenGL REQUIRED)
 find_package(OpenGL REQUIRED)
-find_package(OpenSceneGraph REQUIRED COMPONENTS osgDB osgGA osgParticle osgViewer osgShadow)
+find_package(OpenSceneGraph REQUIRED COMPONENTS osgDB osgGA osgParticle osgViewer osgShadow osgText)
 find_package(ALUT REQUIRED)
 
 # Check for required OSG components
@@ -40,6 +40,7 @@ include_directories(
 add_executable(mscsim
     src/main.cpp
     src/WeatherSystem.cpp
+    src/HUDSystem.cpp
     # Add other source files here
 )
 

@@ -20,8 +20,11 @@
 #include <osgGA/NodeTrackerManipulator>
 #include <osgGA/AnimationPathManipulator>
 #include <osgGA/TerrainManipulator>
+#include <osg/LightModel>
+#include <osg/MatrixTransform>
 
 #include "HUDSystem.h"
+#include "Environment/CelestialSystem.h"
 
 // Flight state
 enum class FlightState {
@@ -239,10 +242,52 @@ public:
         // Set up the viewer
         setThreadingModel(osgViewer::Viewer::SingleThreaded);
         
-        // Create a root node
+        // Create the root node
         osg::ref_ptr<osg::Group> root = new osg::Group;
         
-            // Add a simple model (replace with your aircraft model)
+        // Create and add the celestial system
+        osg::ref_ptr<CelestialSystem> celestialSystem = new CelestialSystem();
+        root->addChild(celestialSystem);
+        
+        // Add terrain
+        osg::ref_ptr<osg::Node> terrain = osgDB::readNodeFile("terrain.earth");
+        if (terrain.valid()) {
+            root->addChild(terrain);
+        } else {
+            // Create a simple ground plane as fallback
+            osg::ref_ptr<osg::Geode> geode = new osg::Geode();
+            osg::ref_ptr<osg::Geometry> geometry = new osg::Geometry();
+            
+            // Create a simple ground plane
+            osg::ref_ptr<osg::Vec3Array> vertices = new osg::Vec3Array();
+            vertices->push_back(osg::Vec3(-1000.0f, -1000.0f, 0.0f));
+            vertices->push_back(osg::Vec3(1000.0f, -1000.0f, 0.0f));
+            vertices->push_back(osg::Vec3(1000.0f, 1000.0f, 0.0f));
+            vertices->push_back(osg::Vec3(-1000.0f, 1000.0f, 0.0f));
+            
+            geometry->setVertexArray(vertices);
+            
+            osg::ref_ptr<osg::Vec4Array> colors = new osg::Vec4Array();
+            colors->push_back(osg::Vec4(0.2f, 0.5f, 0.2f, 1.0f));
+            
+            geometry->setColorArray(colors, osg::Array::BIND_OVERALL);
+            geometry->addPrimitiveSet(new osg::DrawArrays(osg::PrimitiveSet::QUADS, 0, 4));
+            
+            geode->addDrawable(geometry);
+            root->addChild(geode);
+        }
+        
+        // Set up lighting model
+        osg::ref_ptr<osg::LightModel> lightModel = new osg::LightModel;
+        lightModel->setAmbientIntensity(osg::Vec4(0.2f, 0.2f, 0.2f, 1.0f));
+        root->getOrCreateStateSet()->setAttributeAndModes(lightModel, osg::StateAttribute::ON);
+        
+        // Enable lighting
+        root->getOrCreateStateSet()->setMode(GL_LIGHT0, osg::StateAttribute::ON);
+        root->getOrCreateStateSet()->setMode(GL_LIGHT1, osg::StateAttribute::ON);
+        root->getOrCreateStateSet()->setMode(GL_LIGHTING, osg::StateAttribute::ON);
+        
+        // Add a simple model (replace with your aircraft model)
         osg::ref_ptr<osg::Node> model = osgDB::readNodeFile("cessna.osg");
         if (model.valid()) {
             root->addChild(model);

@@ -12,9 +12,21 @@ find_package(OpenSceneGraph REQUIRED COMPONENTS osgDB osgGA osgParticle osgViewe
 find_package(ALUT REQUIRED)
 
 # Check for required OSG components
-if(NOT OSG_LIBRARY OR NOT OSGDB_LIBRARY OR NOT OSGGA_LIBRARY OR NOT OSGPARTICLE_LIBRARY OR NOT OSGVIEWER_LIBRARY)
-    message(FATAL_ERROR "Required OpenSceneGraph components not found. Please ensure osg, osgDB, osgGA, osgParticle, and osgViewer are installed.")
-endif()
+set(REQUIRED_OSG_COMPONENTS
+    osg
+    osgDB
+    osgGA
+    osgParticle
+    osgViewer
+    osgShadow
+    osgText
+)
+
+foreach(COMPONENT ${REQUIRED_OSG_COMPONENTS})
+    if(NOT ${OSG${COMPONENT}_FOUND} AND NOT ${COMPONENT}_FOUND)
+        message(FATAL_ERROR "Required OpenSceneGraph component ${COMPONENT} not found.")
+    endif()
+endforeach()
 
 # Find QWT
 find_path(QWT_INCLUDE_DIR NAMES qwt.h PATH_SUFFIXES qwt-qt5 qwt)
@@ -34,15 +46,23 @@ include_directories(
     ${OPENSCENEGRAPH_INCLUDE_DIRS}
     ${QWT_INCLUDE_DIR}
     ${ALUT_INCLUDE_DIR}
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/Aircraft
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/FlightDynamics
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/Navigation
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/Environment
 )
 
 # Add executable
-add_executable(mscsim
-    src/main.cpp
-    src/WeatherSystem.cpp
-    src/HUDSystem.cpp
-    # Add other source files here
+# Add source files
+file(GLOB_RECURSE SRC_FILES 
+    src/*.cpp 
+    src/Aircraft/*.cpp 
+    src/FlightDynamics/*.cpp
+    src/Navigation/*.cpp
+    src/Environment/*.cpp
 )
+
+add_executable(mscsim ${SRC_FILES})
 
 # Include directories
 target_include_directories(mscsim PRIVATE 
@@ -71,8 +91,10 @@ target_link_libraries(mscsim
     ${OSGPARTICLE_LIBRARY}
     ${OSGVIEWER_LIBRARY}
     ${OSGSHADOW_LIBRARY}
+    ${OSGTEXT_LIBRARY}
     ${QWT_LIBRARY}
     ${ALUT_LIBRARIES}
+    ${CMAKE_THREAD_LIBS_INIT}
 )
 
 # Set C++ standard and properties

@@ -8,8 +8,13 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Find required packages
 find_package(Qt5 COMPONENTS Core Gui Widgets OpenGL REQUIRED)
 find_package(OpenGL REQUIRED)
-find_package(OpenSceneGraph REQUIRED)
+find_package(OpenSceneGraph REQUIRED COMPONENTS osgDB osgGA osgParticle osgViewer osgShadow)
 find_package(ALUT REQUIRED)
+
+# Check for required OSG components
+if(NOT OSG_LIBRARY OR NOT OSGDB_LIBRARY OR NOT OSGGA_LIBRARY OR NOT OSGPARTICLE_LIBRARY OR NOT OSGVIEWER_LIBRARY)
+    message(FATAL_ERROR "Required OpenSceneGraph components not found. Please ensure osg, osgDB, osgGA, osgParticle, and osgViewer are installed.")
+endif()
 
 # Find QWT
 find_path(QWT_INCLUDE_DIR NAMES qwt.h PATH_SUFFIXES qwt-qt5 qwt)
@@ -34,7 +39,20 @@ include_directories(
 # Add executable
 add_executable(mscsim
     src/main.cpp
+    src/WeatherSystem.cpp
     # Add other source files here
+)
+
+# Include directories
+target_include_directories(mscsim PRIVATE 
+    ${CMAKE_CURRENT_SOURCE_DIR}/src
+    ${Qt5Core_INCLUDE_DIRS}
+    ${Qt5Gui_INCLUDE_DIRS}
+    ${Qt5Widgets_INCLUDE_DIRS}
+    ${OPENGL_INCLUDE_DIR}
+    ${OPENSCENEGRAPH_INCLUDE_DIRS}
+    ${QWT_INCLUDE_DIR}
+    ${ALUT_INCLUDE_DIR}
 )
 
 # Link libraries
@@ -46,9 +64,36 @@ target_link_libraries(mscsim
     Qt5::OpenGL
     ${OPENGL_LIBRARIES}
     ${OPENSCENEGRAPH_LIBRARIES}
+    ${OSG_LIBRARY}
+    ${OSGDB_LIBRARY}
+    ${OSGGA_LIBRARY}
+    ${OSGPARTICLE_LIBRARY}
+    ${OSGVIEWER_LIBRARY}
+    ${OSGSHADOW_LIBRARY}
     ${QWT_LIBRARY}
     ${ALUT_LIBRARIES}
 )
+
+# Set C++ standard and properties
+set_target_properties(mscsim PROPERTIES
+    CXX_STANDARD 17
+    CXX_STANDARD_REQUIRED ON
+    POSITION_INDEPENDENT_CODE ON
+)
+
+# Copy required DLLs on Windows
+if(WIN32)
+    add_custom_command(TARGET mscsim POST_BUILD
+        COMMAND ${CMAKE_COMMAND} -E copy_if_different
+            ${QT5_CORE_DLL} $<TARGET_FILE_DIR:mscsim>
+        COMMAND ${CMAKE_COMMAND} -E copy_if_different
+            ${QT5_GUI_DLL} $<TARGET_FILE_DIR:mscsim>
+        COMMAND ${CMAKE_COMMAND} -E copy_if_different
+            ${QT5_WIDGETS_DLL} $<TARGET_FILE_DIR:mscsim>
+        COMMAND ${CMAKE_COMMAND} -E copy_if_different
+            ${QT5_OPENGL_DLL} $<TARGET_FILE_DIR:mscsim>
+    )
+endif()
 
 # Install target
 install(TARGETS mscsim DESTINATION bin)

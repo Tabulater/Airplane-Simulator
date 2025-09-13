@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<weather>
+    <clouds>
+        <enabled>true</enabled>
+        <layers>
+            <layer>
+                <type>cumulus</type>
+                <altitude>2000</altitude>  <!-- meters -->
+                <thickness>500</thickness>  <!-- meters -->
+                <coverage>0.4</coverage>   <!-- 0.0 to 1.0 -->
+                <density>0.6</density>     <!-- 0.0 to 1.0 -->
+                <fade>0.5</fade>           <!-- 0.0 to 1.0 -->
+                <speed>5.0</speed>         <!-- km/h -->
+                <direction>180</direction>  <!-- degrees -->
+            </layer>
+            <layer>
+                <type>stratus</type>
+                <altitude>5000</altitude>
+                <thickness>1000</thickness>
+                <coverage>0.3</coverage>
+                <density>0.4</density>
+                <fade>0.3</fade>
+                <speed>10.0</speed>
+                <direction>225</direction>
+            </layer>
+        </layers>
+    </clouds>
+    
+    <fog>
+        <enabled>true</enabled>
+        <mode>EXP2</mode>  <!-- LINEAR, EXP, or EXP2 -->
+        <color>0.8 0.8 0.8</color>  <!-- RGB -->
+        <density>0.0005</density>    <!-- For EXP/EXP2 modes -->
+        <start>1000</start>          <!-- For LINEAR mode -->
+        <end>5000</end>              <!-- For LINEAR mode -->
+    </fog>
+    
+    <visibility>
+        <range>15000</range>  <!-- meters -->
+        <haze>
+            <enabled>true</enabled>
+            <color>0.8 0.8 0.8</color>
+            <density>0.1</density>  <!-- 0.0 to 1.0 -->
+            <blend>0.3</blend>      <!-- 0.0 to 1.0 -->
+        </haze>
+    </visibility>
+    
+    <wind>
+        <speed>5.0</speed>      <!-- m/s -->
+        <direction>180</direction>  <!-- degrees -->
+        <gust>
+            <enabled>true</enabled>
+            <strength>0.3</strength>  <!-- 0.0 to 1.0 -->
+            <frequency>0.1</frequency>  <!-- Hz -->
+        </gust>
+        <turbulence>
+            <enabled>true</enabled>
+            <strength>0.2</strength>  <!-- 0.0 to 1.0 -->
+            <frequency>0.5</frequency>  <!-- Hz -->
+        </turbulence>
+    </wind>
+    
+    <precipitation>
+        <type>none</type>  <!-- none, rain, snow, hail -->
+        <intensity>0.0</intensity>  <!-- 0.0 to 1.0 -->
+        <visibility>10000</visibility>  <!-- meters -->
+    </precipitation>
+    
+    <time>
+        <year>2025</year>
+        <month>9</month>
+        <day>13</day>
+        <hour>12</hour>
+        <minute>0</minute>
+        <timezone>UTC-4</timezone>
+        <daylight_saving>true</daylight_saving>
+    </time>
+</weather>

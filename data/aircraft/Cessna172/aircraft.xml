@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aircraft>
+    <name>Cessna 172SP Skyhawk</name>
+    <author>FlightGear Team</author>
+    <status>Production</status>
+    
+    <flight-model>
+        <type>advanced</type>
+        <source>CFD-based model</source>
+        <version>2.1</version>
+    </flight-model>
+    
+    <performance>
+        <maximum-speed-kias>163</maximum-speed-kias>
+        <cruise-speed-kias>122</cruise-speed-kias>
+        <stall-speed-kias>47</stall-speed-kias>
+        <service-ceiling-ft>13500</service-ceiling-ft>
+        <range-nm>696</range-nm>
+        <fuel-capacity-gallons>56</fuel-capacity-gallons>
+    </performance>
+    
+    <controls>
+        <elevator>
+            <sensitivity>0.85</sensitivity>
+            <trim-range-degrees>20</trim-range-degrees>
+        </elevator>
+        <aileron>
+            <sensitivity>0.9</sensitivity>
+            <differential>0.3</differential>
+        </aileron>
+        <rudder>
+            <sensitivity>0.8</sensitivity>
+            <yaw-damper>true</yaw-damper>
+        </rudder>
+    </controls>
+    
+    <systems>
+        <avionics>
+            <type>G1000</type>
+            <version>G1000 NXi</version>
+        </avionics>
+        <engine>
+            <type>Lycoming IO-360-L2A</type>
+            <horsepower>180</horsepower>
+            <fuel-type>100LL</fuel-type>
+        </engine>
+    </systems>
+    
+    <model>
+        <path>Models/Cessna172/cessna172.ac</path>
+        <texture>Textures/Cessna172/liveries/default.png</texture>
+        <scale>1.0</scale>
+        <lod>10000</lod>
+    </model>
+    
+    <flight-dynamics>
+        <aerodynamics>
+            <coefficients>
+                <lift>2.8</lift>
+                <drag>0.45</drag>
+                <sideforce>1.2</sideforce>
+            </coefficients>
+            <stability>
+                <longitudinal>0.8</longitudinal>
+                <directional>0.7</directional>
+                <lateral>0.75</lateral>
+            </stability>
+        </aerodynamics>
+        <weight-balance>
+            <empty-weight-lbs>1639</empty-weight-lbs>
+            <max-takeoff-weight-lbs>2550</max-takeoff-weight-lbs>
+            <fuel-capacity-lbs>336</fuel-capacity-lbs>
+            <cargo-capacity-lbs>400</cargo-capacity-lbs>
+        </weight-balance>
+    </flight-dynamics>
+</aircraft>

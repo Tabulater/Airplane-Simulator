@@ -1,5 +1,7 @@
 #include <QApplication>
 #include <QMainWindow>
+#include <QVBoxLayout>
+#include <QDockWidget>
 #include <QOpenGLWidget>
 #include <QSurfaceFormat>
 #include <QDebug>
@@ -25,6 +27,7 @@
 
 #include "HUDSystem.h"
 #include "Environment/CelestialSystem.h"
+#include "UI/SimulationToolbar.h"
 
 // Flight state
 enum class FlightState {
@@ -759,37 +762,26 @@ private:
         
         // Horizontal stabilizer
         vertices->push_back(osg::Vec3(0.0f, 4.5f, 0.0f));
-        vertices->push_back(osg::Vec3(-1.0f, 4.5f, 0.0f));
-        vertices->push_back(osg::Vec3(1.0f, 4.5f, 0.0f));
     }
 };
 
 int main(int argc, char** argv)
 {
-    // Set up the application
     QApplication app(argc, argv);
     
-    // Set up OpenGL format
-    QSurfaceFormat format;
-    format.setSamples(8);
-    format.setVersion(3, 3);
-    format.setProfile(QSurfaceFormat::CoreProfile);
-    format.setDepthBufferSize(24);
-    format.setStencilBufferSize(8);
-    QSurfaceFormat::setDefaultFormat(format);
+    // Set application information
+    QCoreApplication::setApplicationName("MScSim Flight Simulator");
+    QCoreApplication::setApplicationVersion("1.0.0");
+    QCoreApplication::setOrganizationName("MScSim");
     
-    try {
-        // Create main window
-        QMainWindow window;
-        window.setWindowTitle("Flight Simulator");
-        window.resize(1280, 720);
-        
-        // Create main widget and layout
-        QWidget* mainWidget = new QWidget();
-        QHBoxLayout* mainLayout = new QHBoxLayout(mainWidget);
-        mainLayout->setContentsMargins(0, 0, 0, 0);
-        mainLayout->setSpacing(0);
-        
+    // Set style
+    app.setStyle("Fusion");
+    
+    // Create and show the main window
+    MainWindow mainWindow;
+    mainWindow.showMaximized();
+    
+    return app.exec();
         // Create OSG widget
         OSGWidget* osgWidget = new OSGWidget();
         

@@ -50,9 +50,15 @@ include_directories(
     ${CMAKE_CURRENT_SOURCE_DIR}/src/FlightDynamics
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Navigation
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Environment
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/UI
 )
 
 # Add executable
+# Add resource files
+set(RESOURCE_FILES
+    resources/resources.qrc
+)
+
 # Add source files
 file(GLOB_RECURSE SRC_FILES 
     src/*.cpp 
@@ -60,9 +66,13 @@ file(GLOB_RECURSE SRC_FILES
     src/FlightDynamics/*.cpp
     src/Navigation/*.cpp
     src/Environment/*.cpp
+    src/UI/*.cpp
 )
 
-add_executable(mscsim ${SRC_FILES})
+# Process resource files
+qt5_add_resources(RESOURCE_SRCS ${RESOURCE_FILES})
+
+add_executable(mscsim ${SRC_FILES} ${RESOURCE_SRCS})
 
 # Include directories
 target_include_directories(mscsim PRIVATE 

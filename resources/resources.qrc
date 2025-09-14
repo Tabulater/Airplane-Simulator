@@ -1,0 +1,23 @@
+<!DOCTYPE RCC>
+<RCC>
+    <qresource prefix="/icons">
+        <!-- View Icons -->
+        <file alias="view.png">icons/view.png</file>
+        <file alias="pilot-view.png">icons/pilot-view.png</file>
+        <file alias="cockpit-view.png">icons/cockpit-view.png</file>
+        <file alias="orbit-view.png">icons/orbit-view.png</file>
+        <file alias="tower-view.png">icons/tower-view.png</file>
+        <file alias="chase-view.png">icons/chase-view.png</file>
+        <file alias="spot-view.png">icons/spot-view.png</file>
+        
+        <!-- Windows Icons -->
+        <file alias="windows.png">icons/windows.png</file>
+        <file alias="propulsion.png">icons/propulsion.png</file>
+        <file alias="controls.png">icons/controls.png</file>
+        <file alias="airport.png">icons/airport.png</file>
+        <file alias="time.png">icons/time.png</file>
+        
+        <!-- Help Icons -->
+        <file alias="help.png">icons/help.png</file>
+    </qresource>
+</RCC>

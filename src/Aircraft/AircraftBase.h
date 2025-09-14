@@ -5,9 +5,12 @@
 #include <memory>
 #include <osg/Node>
 #include <osg/PositionAttitudeTransform>
+#include <osg/Vec3d>
+#include <osg/Quat>
 #include "../FlightDynamics/CFDInterface.h"
+#include "AircraftInterface.h"
 
-class AircraftBase {
+class AircraftBase : public AircraftInterface {
 public:
     enum class AircraftType {
         AW101,
@@ -67,6 +70,67 @@ public:
 
     // Get aircraft name
     virtual std::string getName() const = 0;
+    
+    // AircraftInterface implementation
+    osg::Vec3d getPosition() const override;
+    osg::Quat getOrientation() const override;
+    
+    // Flight parameters
+    double getAirspeed() const override;          // in knots
+    double getGroundSpeed() const override;       // in knots
+    double getVerticalSpeed() const override;     // in feet per minute
+    double getAltitude() const override;          // in feet MSL
+    double getPressureAltitude() const override;  // in feet
+    double getRadioAltitude() const override;     // in feet AGL
+    
+    // Attitude
+    double getPitch() const override;     // in degrees, positive up
+    double getRoll() const override;      // in degrees, positive right wing down
+    double getHeading() const override;   // in degrees, true north
+    double getTrack() const override;     // in degrees, true north
+    
+    // Performance
+    double getAngleOfAttack() const override;     // in degrees
+    double getSideslipAngle() const override;     // in degrees
+    double getGLoad() const override;             // in Gs (1.0 = 1G)
+    
+    // Navigation
+    double getSelectedHeading() const override;    // in degrees
+    double getSelectedAltitude() const override;   // in feet
+    double getSelectedAirspeed() const override;   // in knots
+    double getSelectedVerticalSpeed() const override; // in feet per minute
+    
+    // Systems
+    bool isAutopilotEngaged() const override;
+    bool isAutoThrottleEngaged() const override;
+    bool isGearDown() const override;
+    bool isOnGround() const override;
+    
+    // Navigation radios
+    double getNav1Frequency() const override;
+    double getNav2Frequency() const override;
+    double getCom1Frequency() const override;
+    double getCom2Frequency() const override;
+    
+    // Fuel
+    double getFuelQuantity() const override;       // in lbs or kg
+    double getFuelFlow() const override;           // in lbs/hour or kg/hour
+    
+    // Engines
+    int getNumEngines() const override;
+    double getEngineRPM(int engine) const override; // in %
+    double getEngineEGT(int engine) const override; // in degrees C
+    double getEngineFF(int engine) const override;  // fuel flow in lbs/hour or kg/hour
+    
+    // Warning systems
+    bool isStallWarningActive() const override;
+    bool isOverspeedWarningActive() const override;
+    bool isTerrainWarningActive() const override;
+    bool isGearWarningActive() const override;
+    
+    // Configuration
+    const std::string& getAircraftType() const override;
+    const std::string& getRegistration() const override;
 
 protected:
     AircraftType _type;
@@ -83,6 +147,24 @@ protected:
 
     // Update visual model
     virtual void updateVisuals();
+    
+    // Navigation and radio state
+    struct NavState {
+        double nav1Freq{118.0};  // MHz
+        double nav2Freq{110.6};  // MHz
+        double com1Freq{121.5};  // MHz
+        double com2Freq{121.7};  // MHz
+        double selectedHeading{0.0};  // degrees
+        double selectedAltitude{0.0}; // feet
+        double selectedAirspeed{0.0}; // knots
+        double selectedVS{0.0};       // feet per minute
+        bool autopilotEngaged{false};
+        bool autoThrottleEngaged{false};
+    } _navState;
+    
+    // Aircraft identification
+    std::string _registration{"N12345"};
+    std::string _aircraftType{"Generic"};
 };
 
 // Factory function to create aircraft instances

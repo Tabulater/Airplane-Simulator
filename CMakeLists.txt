@@ -59,7 +59,7 @@ set(RESOURCE_FILES
     resources/resources.qrc
 )
 
-# Add source files
+# Add source files for main application
 file(GLOB_RECURSE SRC_FILES 
     src/*.cpp 
     src/Aircraft/*.cpp 
@@ -69,10 +69,71 @@ file(GLOB_RECURSE SRC_FILES
     src/UI/*.cpp
 )
 
+# Explicitly list environment source files
+set(ENV_SRC_FILES
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/Environment/CloudLayer.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/Environment/WeatherSystem.cpp
+)
+
+# Test application source files
+set(TEST_WEATHER_SRC
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/test_weather.cpp
+    ${ENV_SRC_FILES}
+)
+
 # Process resource files
 qt5_add_resources(RESOURCE_SRCS ${RESOURCE_FILES})
 
-add_executable(mscsim ${SRC_FILES} ${RESOURCE_SRCS})
+# Main application
+add_executable(mscsim 
+    ${SRC_FILES}
+    ${ENV_SRC_FILES}
+    ${RESOURCE_SRCS}
+)
+
+# Link main application
+target_link_libraries(mscsim
+    PRIVATE
+    Qt5::Core
+    Qt5::Gui
+    Qt5::Widgets
+    Qt5::OpenGL
+    ${OPENGL_LIBRARIES}
+    ${OPENSCENEGRAPH_LIBRARIES}
+    ${OSG_LIBRARY}
+    ${OSGDB_LIBRARY}
+    ${OSGGA_LIBRARY}
+    ${OSGVIEWER_LIBRARY}
+    ${OSGTEXT_LIBRARY}
+    ${OSGPARTICLE_LIBRARY}
+    ${OSGSHADOW_LIBRARY}
+    ${QWT_LIBRARY}
+    ${ALUT_LIBRARY}
+)
+
+# Test weather application
+add_executable(test_weather ${TEST_WEATHER_SRC})
+
+# Link test application
+target_link_libraries(test_weather
+    PRIVATE
+    ${OPENGL_LIBRARIES}
+    ${OPENSCENEGRAPH_LIBRARIES}
+    ${OSG_LIBRARY}
+    ${OSGDB_LIBRARY}
+    ${OSGGA_LIBRARY}
+    ${OSGVIEWER_LIBRARY}
+    ${OSGTEXT_LIBRARY}
+    ${OSGPARTICLE_LIBRARY}
+)
+
+# Include directories for test application
+target_include_directories(test_weather PRIVATE 
+    ${CMAKE_CURRENT_SOURCE_DIR}/src
+    ${OPENGL_INCLUDE_DIR}
+    ${OPENSCENEGRAPH_INCLUDE_DIRS}
+    ${ALUT_INCLUDE_DIR}
+)
 
 # Include directories
 target_include_directories(mscsim PRIVATE 

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hud_config>
+    <!-- General HUD Settings -->
+    <general>
+        <brightness>0.8</brightness>
+        <color>0.0 1.0 0.0</color>  <!-- Green -->
+        <opacity>0.9</opacity>
+        <scale>1.0</scale>
+    </general>
+
+    <!-- Flight Path Marker (FPM) -->
+    <flight_path_marker>
+        <enabled>true</enabled>
+        <size>20.0</size>
+        <line_width>2.0</line_width>
+        <style>crosshair</style>  <!-- crosshair, circle, or chevron -->
+        <show_velocity_vector>true</show_velocity_vector>
+        <show_acceleration_cue>true</show_acceleration_cue>
+        <drift_angle_ticks>true</drift_angle_ticks>
+    </flight_path_marker>
+
+    <!-- Horizon Line -->
+    <horizon>
+        <enabled>true</enabled>
+        <width>2.0</width>
+        <pitch_ladder>
+            <enabled>true</enabled>
+            <spacing_degrees>10.0</spacing_degrees>
+            <width_degrees>30.0</width_degrees>
+            <major_interval>3</major_interval>
+        </pitch_ladder>
+        <bank_angle_indicators>true</bank_angle_indicators>
+        <slip_skid_indicator>true</slip_skid_indicator>
+    </horizon>
+
+    <!-- Airspeed Tape -->
+    <airspeed>
+        <enabled>true</enabled>
+        <position>-0.8 0.0</position>
+        <width>80.0</width>
+        <height>400.0</height>
+        <major_ticks_every>50</major_ticks_every>
+        <minor_ticks_every>10</minor_ticks_every>
+        <show_reference_speeds>true</show_reference_speeds>
+        <show_mach_number>true</show_mach_number>
+    </airspeed>
+
+    <!-- Altitude Tape -->
+    <altitude>
+        <enabled>true</enabled>
+        <position>0.8 0.0</position>
+        <width>80.0</width>
+        <height>400.0</height>
+        <major_ticks_every>500</major_ticks_every>
+        <minor_ticks_every>100</minor_ticks_every>
+        <show_radio_altitude>true</show_radio_altitude>
+        <show_decision_height>true</show_decision_height>
+    </altitude>
+
+    <!-- Heading Indicator -->
+    <heading>
+        <enabled>true</enabled>
+        <position>0.0 0.4</position>
+        <width>600.0</width>
+        <height>40.0</height>
+        <major_ticks_every>30</major_ticks_every>
+        <minor_ticks_every>10</minor_ticks_every>
+        <show_runway_heading>true</show_runway_heading>
+        <show_navaid_bearings>true</show_navaid_bearings>
+    </heading>
+
+    <!-- Flight Mode Annunciators -->
+    <annunciators>
+        <position>0.0 -0.9</position>
+        <text_size>16</text_size>
+        <show_flight_mode>true</show_flight_mode>
+        <show_autopilot_status>true</show_autopilot_status>
+        <show_gear_status>true</show_gear_status>
+        <show_flap_status>true</show_flap_status>
+        <show_weapon_status>true</show_weapon_status>
+    </annunciators>
+
+    <!-- Navigation Display -->
+    <navigation_display>
+        <enabled>true</enabled>
+        <position>0.0 0.0</position>
+        <size>0.3</size>
+        <show_waypoints>true</show_waypoints>
+        <show_vor>true</show_vor>
+        <show_ndb>true</show_ndb>
+        <show_airports>true</show_airports>
+        <show_airspace>true</show_airspace>
+        <show_terrain>true</show_terrain>
+        <terrain_alert_levels>
+            <caution>2000</caution>
+            <warning>1000</warning>
+        </terrain_alert_levels>
+    </navigation_display>
+
+    <!-- HUD Symbology Colors -->
+    <colors>
+        <normal>0.0 1.0 0.0</normal>       <!-- Green -->
+        <caution>1.0 1.0 0.0</caution>     <!-- Yellow -->
+        <warning>1.0 0.0 0.0</warning>      <!-- Red -->
+        <advisory>0.0 1.0 1.0</advisory>    <!-- Cyan -->
+        <highlight>1.0 0.5 0.0</highlight>   <!-- Orange -->
+    </colors>
+
+    <!-- Night Vision Goggles Mode -->
+    <night_vision>
+        <enabled>false</enabled>
+        <color>0.2 0.8 0.2</color>  <!-- Dim green -->
+        <brightness_reduction>0.5</brightness_reduction>
+    </night_vision>
+
+    <!-- HUD Field of View -->
+    <field_of_view>
+        <horizontal_degrees>30.0</horizontal_degrees>
+        <vertical_degrees>25.0</vertical_degrees>
+        <aspect_ratio>1.33</aspect_ratio>
+    </field_of_view>
+
+    <!-- HUD Reticle -->
+    <reticle>
+        <type>fixed</type>  <!-- fixed, boresight, or velocity_vector -->
+        <size>20.0</size>
+        <style>crosshair</style>
+        <show_gun_cross>true</show_gun_cross>
+        <show_bomb_fall_line>true</show_bomb_fall_line>
+    </reticle>
+
+    <!-- HUD Symbology Scaling -->
+    <scaling>
+        <enabled>true</enabled>
+        <min_scale>0.8</min_scale>
+        <max_scale>1.2</max_scale>
+        <reference_distance>1000.0</reference_distance>  <!-- Distance in meters for 1.0 scale -->
+    </scaling>
+
+    <!-- HUD Symbology Motion Smoothing -->
+    <smoothing>
+        <enabled>true</enabled>
+        <position_smoothing>0.2</position_smoothing>
+        <attitude_smoothing>0.3</attitude_smoothing>
+        <velocity_smoothing>0.4</velocity_smoothing>
+    </smoothing>
+</hud_config>

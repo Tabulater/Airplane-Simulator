@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aircraft>
+    <name>AgustaWestland AW101 Merlin</name>
+    <author>FlightGear Team</author>
+    <status>Production</status>
+    <type>helicopter</type>
+    
+    <flight-model>
+        <type>advanced</type>
+        <source>CFD-based model</source>
+        <version>3.2</version>
+        <notes>Enhanced flight dynamics with vortex ring state modeling</notes>
+    </flight-model>
+    
+    <performance>
+        <maximum-speed-knots>167</maximum-speed-knots>
+        <cruise-speed-knots>150</cruise-speed-knots>
+        <never-exceed-speed-knots>192</never-exceed-speed-knots>
+        <hover-ige-ft>10,000</hover-ige-ft>
+        <hover-oge-ft>7,500</hover-oge-ft>
+        <service-ceiling-ft>15,000</service-ceiling-ft>
+        <range-nm>750</range-nm>
+        <endurance>5.0</endurance>
+    </performance>
+    
+    <controls>
+        <cyclic>
+            <sensitivity>0.75</sensitivity>
+            <response>0.8</response>
+            <stability-augmentation>true</stability-augmentation>
+        </cyclic>
+        <collective>
+            <sensitivity>0.7</sensitivity>
+            <governor>true</governor>
+            <hover-assist>true</hover-assist>
+        </collective>
+        <pedals>
+            <sensitivity>0.65</sensitivity>
+            <yaw-damper>true</yaw-damper>
+            <turn-coordinator>true</turn-coordinator>
+        </pedals>
+    </controls>
+    
+    <systems>
+        <avionics>
+            <type>Glass Cockpit</type>
+            <version>Honeywell Primus Epic 2.0</version>
+            <features>4-axis autopilot, FMS, EICAS, HUD</features>
+        </avionics>
+        <engines>
+            <count>3</count>
+            <type>Rolls-Royce Turbomeca RTM322-01</type>
+            <horsepower>2,520 shp each</horsepower>
+            <fuel-type>JP-8, JP-5, or F-34</fuel-type>
+        </engines>
+        <rotor>
+            <type>Five-bladed main rotor</type>
+            <diameter>18.59m</diameter>
+            <blade-chord>0.55m</blade-chord>
+            <blade-twist>-10°</blade-twist>
+        </rotor>
+    </systems>
+    
+    <model>
+        <path>Models/AW101/aw101.ac</path>
+        <texture>Textures/AW101/liveries/default.png</texture>
+        <scale>1.0</scale>
+        <lod>15000</lod>
+        <cockpit-3d>true</cockpit-3d>
+    </model>
+    
+    <flight-dynamics>
+        <aerodynamics>
+            <rotor-dynamics>
+                <blade-element>true</blade-element>
+                <dynamic-inflow>true</dynamic-inflow>
+                <vortex-ring-state>true</vortex-ring-state>
+                <ground-effect>true</ground-effect>
+            </rotor-dynamics>
+            <coefficients>
+                <lift>3.2</lift>
+                <drag>0.55</drag>
+                <sideforce>1.5</sideforce>
+            </coefficients>
+        </aerodynamics>
+        <weight-balance>
+            <empty-weight-lbs>23,149</empty-weight-lbs>
+            <max-takeoff-weight-lbs>34,392</max-takeoff-weight-lbs>
+            <fuel-capacity-lbs>9,480</fuel-capacity-lbs>
+            <useful-load-lbs>11,243</useful-load-lbs>
+        </weight-balance>
+        <flight-controls>
+            <stability-augmentation>
+                <pitch-damper>true</pitch-damper>
+                <roll-damper>true</roll-damper>
+                <yaw-damper>true</yaw-damper>
+                <attitude-hold>true</attitude-hold>
+                <altitude-hold>true</altitude-hold>
+                <heading-hold>true</heading-hold>
+            </stability-augmentation>
+            <force-trim>true</force-trim>
+            <auto-hover>true</auto-hover>
+        </flight-controls>
+    </flight-dynamics>
+</aircraft>

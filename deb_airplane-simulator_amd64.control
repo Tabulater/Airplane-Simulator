@@ -1,0 +1,8 @@
+Package: airplane-simulator
+Version: 1.0.0
+Architecture: amd64
+Maintainer: Airplane Simulator Team <tabulater@users.noreply.github.com>
+Depends: airplane-simulator-data, airplane-simulator-terrain, libopenscenegraph160, libopenthreads21, libalut0, libopenal1, libqt5core5a, libqt5gui5, libqt5opengl5, libqt5svg5, libqt5widgets5, libqt5xml5, libx11-6, libxss1
+Installed-Size: 3686
+Homepage: https://github.com/Tabulater/Airplane-Simulator
+Description: A modern flight simulator built with OpenSceneGraph and Qt, focused on realistic flight dynamics and flight controls simulation.

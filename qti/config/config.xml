@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Installer>
+  <Name>Airplane Simulator</Name>
+  <Version>1.0.0</Version>
+  <Title>Airplane Simulator Installer</Title>
+  <Publisher>Airplane Simulator Team</Publisher>
+  <StartMenuDir>AirplaneSimulator</StartMenuDir>
+  <TargetDir>@ApplicationsDir@/AirplaneSimulator</TargetDir>
+</Installer>

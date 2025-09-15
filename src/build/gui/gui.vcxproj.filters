@@ -1,0 +1,534 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Airplane Simulator\src\build\gui\gui_autogen\mocs_compilation_Debug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\gui\Aircrafts.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\gui\Airports.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\gui\Colors.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\gui\ComboUnits.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\gui\ComboUnitsAngle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\gui\ComboUnitsFlowRate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\gui\ComboUnitsLength.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\gui\ComboUnitsMass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\gui\ComboUnitsNumber.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\gui\ComboUnitsPressure.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\gui\ComboUnitsRotation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\gui\ComboUnitsTemperature.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\gui\ComboUnitsVelocity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\gui\DialogAction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\gui\DialogConf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\gui\DialogEnvr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\gui\DialogInit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\gui\DialogMass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\gui\DialogTime.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\gui\DockWidgetAuto.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\gui\DockWidgetCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\gui\DockWidgetData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\gui\DockWidgetEFIS.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\gui\DockWidgetMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\gui\DockWidgetMap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\gui\DockWidgetProp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\gui\Fonts.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\gui\GraphicsEADI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\gui\GraphicsEHSI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\gui\GraphicsPedals.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\gui\GraphicsStick.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\gui\GraphicsWindowQt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\gui\KeyHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\gui\KeyMap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\gui\LayoutSquare.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\gui\MainWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\gui\PageControls.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\gui\PageGeneral.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\gui\ScreenSaver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\gui\SpinBoxHighlight.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\gui\WidgetCGI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\gui\WidgetGDU.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\gui\WidgetMap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\gui\WidgetOSG.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\gui\WidgetOTW.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\gui\WidgetPFD.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\gui\WidgetSquare.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\build\gui\gui_autogen\mocs_compilation_Release.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\build\gui\gui_autogen\mocs_compilation_MinSizeRel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\build\gui\gui_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Airplane Simulator\src\gui\ComboUnits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\gui\ComboUnitsAngle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\gui\ComboUnitsFlowRate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\gui\ComboUnitsLength.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\gui\ComboUnitsMass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\gui\ComboUnitsNumber.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\gui\ComboUnitsPressure.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\gui\ComboUnitsRotation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\gui\ComboUnitsTemperature.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\gui\ComboUnitsVelocity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\gui\DialogAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\gui\DialogConf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\gui\DialogEnvr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\gui\DialogInit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\gui\DialogMass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\gui\DialogTime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\gui\DockWidgetAuto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\gui\DockWidgetCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\gui\DockWidgetData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\gui\DockWidgetEFIS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\gui\DockWidgetMain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\gui\DockWidgetMap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\gui\DockWidgetProp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\gui\GraphicsEADI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\gui\GraphicsEHSI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\gui\GraphicsPedals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\gui\GraphicsStick.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\gui\LayoutSquare.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\gui\MainWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\gui\PageControls.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\gui\PageGeneral.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\gui\SpinBoxHighlight.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\gui\WidgetCGI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\gui\WidgetGDU.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\gui\WidgetMap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\gui\WidgetOSG.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\gui\WidgetOTW.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\gui\WidgetPFD.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\gui\WidgetSquare.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_Debug\ui_DialogAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_Debug\ui_DialogConf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_Debug\ui_DialogEnvr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_Debug\ui_DialogInit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_Debug\ui_DialogMass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_Debug\ui_DialogTime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_Debug\ui_DockWidgetAuto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_Debug\ui_DockWidgetCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_Debug\ui_DockWidgetData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_Debug\ui_DockWidgetEFIS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_Debug\ui_DockWidgetMain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_Debug\ui_DockWidgetMap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_Debug\ui_DockWidgetProp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_Debug\ui_MainWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_Debug\ui_PageControls.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_Debug\ui_PageGeneral.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_Debug\ui_WidgetGDU.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_Debug\ui_WidgetPFD.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_Release\ui_DialogAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_Release\ui_DialogConf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_Release\ui_DialogEnvr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_Release\ui_DialogInit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_Release\ui_DialogMass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_Release\ui_DialogTime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_Release\ui_DockWidgetAuto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_Release\ui_DockWidgetCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_Release\ui_DockWidgetData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_Release\ui_DockWidgetEFIS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_Release\ui_DockWidgetMain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_Release\ui_DockWidgetMap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_Release\ui_DockWidgetProp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_Release\ui_MainWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_Release\ui_PageControls.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_Release\ui_PageGeneral.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_Release\ui_WidgetGDU.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_Release\ui_WidgetPFD.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_MinSizeRel\ui_DialogAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_MinSizeRel\ui_DialogConf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_MinSizeRel\ui_DialogEnvr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_MinSizeRel\ui_DialogInit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_MinSizeRel\ui_DialogMass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_MinSizeRel\ui_DialogTime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_MinSizeRel\ui_DockWidgetAuto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_MinSizeRel\ui_DockWidgetCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_MinSizeRel\ui_DockWidgetData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_MinSizeRel\ui_DockWidgetEFIS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_MinSizeRel\ui_DockWidgetMain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_MinSizeRel\ui_DockWidgetMap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_MinSizeRel\ui_DockWidgetProp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_MinSizeRel\ui_MainWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_MinSizeRel\ui_PageControls.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_MinSizeRel\ui_PageGeneral.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_MinSizeRel\ui_WidgetGDU.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_MinSizeRel\ui_WidgetPFD.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_RelWithDebInfo\ui_DialogAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_RelWithDebInfo\ui_DialogConf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_RelWithDebInfo\ui_DialogEnvr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_RelWithDebInfo\ui_DialogInit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_RelWithDebInfo\ui_DialogMass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_RelWithDebInfo\ui_DialogTime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_RelWithDebInfo\ui_DockWidgetAuto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_RelWithDebInfo\ui_DockWidgetCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_RelWithDebInfo\ui_DockWidgetData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_RelWithDebInfo\ui_DockWidgetEFIS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_RelWithDebInfo\ui_DockWidgetMain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_RelWithDebInfo\ui_DockWidgetMap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_RelWithDebInfo\ui_DockWidgetProp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_RelWithDebInfo\ui_MainWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_RelWithDebInfo\ui_PageControls.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_RelWithDebInfo\ui_PageGeneral.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_RelWithDebInfo\ui_WidgetGDU.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Airplane Simulator\src\build\gui\gui_autogen\include_RelWithDebInfo\ui_WidgetPFD.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Airplane Simulator\src\build\CMakeFiles\b22f50a1a026948f3e827efa81cdcbc5\autouic_(CONFIG).stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Airplane Simulator\src\gui\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Airplane Simulator\src\gui\DialogAction.ui" />
+    <None Include="C:\Airplane Simulator\src\gui\DialogConf.ui" />
+    <None Include="C:\Airplane Simulator\src\gui\DialogEnvr.ui" />
+    <None Include="C:\Airplane Simulator\src\gui\DialogInit.ui" />
+    <None Include="C:\Airplane Simulator\src\gui\DialogMass.ui" />
+    <None Include="C:\Airplane Simulator\src\gui\DialogTime.ui" />
+    <None Include="C:\Airplane Simulator\src\gui\DockWidgetAuto.ui" />
+    <None Include="C:\Airplane Simulator\src\gui\DockWidgetCtrl.ui" />
+    <None Include="C:\Airplane Simulator\src\gui\DockWidgetData.ui" />
+    <None Include="C:\Airplane Simulator\src\gui\DockWidgetEFIS.ui" />
+    <None Include="C:\Airplane Simulator\src\gui\DockWidgetMain.ui" />
+    <None Include="C:\Airplane Simulator\src\gui\DockWidgetMap.ui" />
+    <None Include="C:\Airplane Simulator\src\gui\DockWidgetProp.ui" />
+    <None Include="C:\Airplane Simulator\src\gui\MainWindow.ui" />
+    <None Include="C:\Airplane Simulator\src\gui\PageControls.ui" />
+    <None Include="C:\Airplane Simulator\src\gui\PageGeneral.ui" />
+    <None Include="C:\Airplane Simulator\src\gui\WidgetGDU.ui" />
+    <None Include="C:\Airplane Simulator\src\gui\WidgetPFD.ui" />
+    <None Include="C:\Airplane Simulator\src\build\gui\gui_autogen\autouic_Debug.stamp" />
+    <None Include="C:\Airplane Simulator\src\build\gui\gui_autogen\autouic_Release.stamp" />
+    <None Include="C:\Airplane Simulator\src\build\gui\gui_autogen\autouic_MinSizeRel.stamp" />
+    <None Include="C:\Airplane Simulator\src\build\gui\gui_autogen\autouic_RelWithDebInfo.stamp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{EC65FFCA-E579-3D51-A506-F2DC7B0EF466}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{4B6B6167-D499-3111-8121-3FFA93231A10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{32ED4653-F068-3117-B7DA-634590BB4598}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

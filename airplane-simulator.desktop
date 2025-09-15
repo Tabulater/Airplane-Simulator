@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Airplane Simulator
+GenericName=Flight Simulator
+Exec=airplane-simulator
+Terminal=false
+Categories=Game;Simulation
+Comment=An open-source flight simulator built with OpenSceneGraph and Qt
+Keywords=flight;simulator;airplane;aviation;
+Icon=airplane-simulator

@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<Wix
+  xmlns="http://schemas.microsoft.com/wix/2006/wi"
+  xmlns:util="http://schemas.microsoft.com/wix/UtilExtension">
+  <Product
+    Id="{4718e194-d9ee-4a7c-a3a3-03be1aefcb3a}" 
+    Name="Airplane Simulator"
+    Language="1033"
+    Version="1.0.0"
+    Manufacturer="Airplane Simulator Team" 
+    UpgradeCode="{1083005b-ce61-4e9a-a31b-8ec58b854b72}">
+        
+    <Package
+      Description="Airplane Simulator Windows Installer Package"
+      Manufacturer="Airplane Simulator Team"
+      InstallerVersion="301"
+      InstallPrivileges="elevated"
+      InstallScope="perMachine"
+      Platform="x64"
+      Compressed="yes" />
+
+    <Media Id="1" Cabinet="airplane-simulator.cab" EmbedCab="yes" />
+    
+    <Property Id="AllUSERS" Value="1"/>
+    
+    <WixVariable Id="WixUILicenseRtf" Value="LICENSE.rtf" />
+
+    <Directory Id="TARGETDIR" Name="SourceDir">
+    
+      <!-- Visual C++ 2019 Redistributable Merge Module -->
+      <Merge Id="VCRedist" SourceFile="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Redist\MSVC\14.28.29325\MergeModules\Microsoft_VC142_CRT_x64.msm" DiskId="1" Language="0"/>
+      
+      <!-- installation dir -->
+      <Directory Id="ProgramFilesFolder" Name="PFiles">
+        <Directory Id="dir_airplane_simulator" Name="AirplaneSimulator">
+        
+          <Directory Id="dir_airplane_simulator_bin" Name="bin">
+          
+            <!-- airplane-simulator.exe -->
+            <Component Id="dir_airplane_simulator_exe" Guid="{be12303b-b379-4402-8639-153d1e81387a}">
+              <File Id="dir_airplane_simulator_exe_file" Name="airplane-simulator.exe" DiskId="1" Source="bin\airplane-simulator.exe" />
+            </Component>
+          
+          </Directory>
+            
+        </Directory>
+      </Directory>
+            
+      <!-- start menu shortcuts -->
+      <Directory Id="ProgramMenuFolder">
+        <Directory Id="ApplicationProgramsFolder" Name="AirplaneSimulator">
+          <Component Id="ApplicationShortcut" Guid="{a0e5c3d2-1b5c-4e8f-9a3d-7c8e4f5a6b7c}">
+            <Shortcut Id="ApplicationStartMenuShortcut" Name="Airplane Simulator" Description="Airplane Simulator" Target="[#dir_airplane_simulator_exe_file]" WorkingDirectory="dir_airplane_simulator_bin" />
+            <Shortcut Id="menu_unistall" Name="Uninstall Airplane Simulator" Target="[SystemFolder]msiexec.exe" Arguments="/x [ProductCode]" Description="Uninstall" />
+            <RemoveFolder Id="ApplicationProgramsFolder" On="uninstall" />
+            <RegistryValue Root="HKCU" Key="Software\AirplaneSimulator" Name="installed" Type="integer" Value="1" KeyPath="yes" />
+          </Component>
+        </Directory>
+      </Directory>
+      
+    </Directory>
+
+    <!-- main program -->
+    <Feature Id="airplane_simulator_main" Title="Airplane Simulator" Level="1">
+      <ComponentGroupRef Id="cg_airplane_simulator_alut" /> <!-- ALUT libs -->
+      <ComponentGroupRef Id="cg_airplane_simulator_data" /> <!-- data -->
+      <ComponentGroupRef Id="cg_airplane_simulator_osg" /> <!-- OSG libs -->
+      <ComponentRef Id="ApplicationShortcut" />
+      <ComponentRef Id="dir_airplane_simulator_exe" />
+    </Feature>
+    
+    <!-- Visual C++ 2019 Redistributable Merge Module -->
+    <Feature Id="VCRedist" Title="Visual C++ 2019 Runtime" AllowAdvertise="no" Display="hidden" Level="1">
+      <MergeRef Id="VCRedist"/>
+    </Feature>
+
+    <Property Id="WIXUI_INSTALLDIR" Value="dir_airplane_simulator" />
+    <UIRef Id="WixUI_InstallDir" />
+    
+    <Icon Id="airplane_simulator_ico" SourceFile="airplane-simulator.ico" />
+    
+  </Product>
+</Wix>

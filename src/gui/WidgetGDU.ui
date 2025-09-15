@@ -1,0 +1,1680 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WidgetGDU</class>
+ <widget class="QWidget" name="WidgetGDU">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1100</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QFrame" name="frame">
+     <property name="styleSheet">
+      <string notr="true">#frame
+{
+	border-image:url(:/gui/images/g1000/background.png);
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="WidgetCGI" name="widgetCGI" native="true">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>45</y>
+        <width>800</width>
+        <height>600</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>800</width>
+        <height>600</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>800</width>
+        <height>600</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#widgetCGI
+{
+	background-color: #000;
+	/* border-radius: 10px; */
+}</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="widgetBottom" native="true">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>650</y>
+        <width>800</width>
+        <height>70</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>800</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>800</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+	border-image:url(:/gui/images/g1000/up_btn_soft.png);
+}
+
+QPushButton:pressed
+{
+	border-image:url(:/gui/images/g1000/dn_btn_soft.png);
+}
+
+QLabel
+{
+	border-image:url(:/gui/images/g1000/line.png);
+}</string>
+      </property>
+      <widget class="QPushButton" name="buttonKeySoft_11">
+       <property name="geometry">
+        <rect>
+         <x>675</x>
+         <y>17</y>
+         <width>44</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Soft Key 11</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonKeySoft_10">
+       <property name="geometry">
+        <rect>
+         <x>609</x>
+         <y>17</y>
+         <width>44</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Soft Key 10</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonKeySoft_09">
+       <property name="geometry">
+        <rect>
+         <x>542</x>
+         <y>17</y>
+         <width>44</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Soft Key 9</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonKeySoft_02">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>17</y>
+         <width>44</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Soft Key 2</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonKeySoft_08">
+       <property name="geometry">
+        <rect>
+         <x>476</x>
+         <y>17</y>
+         <width>44</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Soft Key 8</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonKeySoft_04">
+       <property name="geometry">
+        <rect>
+         <x>212</x>
+         <y>17</y>
+         <width>44</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Soft Key 4</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonKeySoft_06">
+       <property name="geometry">
+        <rect>
+         <x>344</x>
+         <y>17</y>
+         <width>44</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Soft Key 6</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonKeySoft_03">
+       <property name="geometry">
+        <rect>
+         <x>146</x>
+         <y>17</y>
+         <width>44</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Soft Key 3</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonKeySoft_07">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>17</y>
+         <width>44</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Soft Key 7</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonKeySoft_01">
+       <property name="geometry">
+        <rect>
+         <x>14</x>
+         <y>17</y>
+         <width>44</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Soft Key 1</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonKeySoft_05">
+       <property name="geometry">
+        <rect>
+         <x>278</x>
+         <y>17</y>
+         <width>44</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Soft Key 5</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonKeySoft_12">
+       <property name="geometry">
+        <rect>
+         <x>741</x>
+         <y>17</y>
+         <width>44</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Soft Key 12</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="widgetRight" native="true">
+      <property name="geometry">
+       <rect>
+        <x>950</x>
+        <y>0</y>
+        <width>150</width>
+        <height>720</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <widget class="QPushButton" name="buttonKnob_RANGE">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>392</y>
+         <width>41</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>41</width>
+         <height>41</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>41</width>
+         <height>41</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Joystick</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	border-image:url(:/gui/images/g1000/up_joy_pan.png);
+}
+
+QPushButton:pressed
+{
+	border-image:url(:/gui/images/g1000/dn_joy_pan.png);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonKnob_CRS">
+       <property name="geometry">
+        <rect>
+         <x>52</x>
+         <y>266</y>
+         <width>57</width>
+         <height>57</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>57</width>
+         <height>57</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>57</width>
+         <height>57</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>CRS/BARO Knob</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	border-image:url(:/gui/images/g1000/up_knob_crs.png);
+}
+
+QPushButton:pressed
+{
+	border-image:url(:/gui/images/g1000/dn_knob_crs.png);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonKnob_Vol_COM">
+       <property name="geometry">
+        <rect>
+         <x>64</x>
+         <y>35</y>
+         <width>33</width>
+         <height>33</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>33</width>
+         <height>33</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>33</width>
+         <height>33</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>COM VOL/SQ Knob</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	border-image:url(:/gui/images/g1000/up_knob_vol.png);
+}
+
+QPushButton:pressed
+{
+	border-image:url(:/gui/images/g1000/dn_knob_vol.png);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonKnob_COM">
+       <property name="geometry">
+        <rect>
+         <x>52</x>
+         <y>133</y>
+         <width>58</width>
+         <height>58</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>58</width>
+         <height>58</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>58</width>
+         <height>58</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Dual COM Knob</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	border-image:url(:/gui/images/g1000/up_knob_dual.png);
+}
+
+QPushButton:pressed
+{
+	border-image:url(:/gui/images/g1000/dn_knob_dual.png);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonKey_COM">
+       <property name="geometry">
+        <rect>
+         <x>22</x>
+         <y>79</y>
+         <width>44</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>COM Frequency Transfer Key</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	border-image:url(:/gui/images/g1000/up_btn_switch.png);
+}
+
+QPushButton:pressed
+{
+	border-image:url(:/gui/images/g1000/dn_btn_switch.png);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonKnob_FMS">
+       <property name="geometry">
+        <rect>
+         <x>52</x>
+         <y>630</y>
+         <width>58</width>
+         <height>58</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>58</width>
+         <height>58</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>58</width>
+         <height>58</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Dual FMS Knob</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	border-image:url(:/gui/images/g1000/up_knob_dual.png);
+}
+
+QPushButton:pressed
+{
+	border-image:url(:/gui/images/g1000/dn_knob_dual.png);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonKey_FMS_DEST">
+       <property name="geometry">
+        <rect>
+         <x>33</x>
+         <y>482</y>
+         <width>44</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Direct-to Key</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	border-image:url(:/gui/images/g1000/up_btn_dest.png);
+}
+
+QPushButton:pressed
+{
+	border-image:url(:/gui/images/g1000/dn_btn_dest.png);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonKey_FMS_FPL">
+       <property name="geometry">
+        <rect>
+         <x>33</x>
+         <y>523</y>
+         <width>44</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>FPL Key</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	border-image:url(:/gui/images/g1000/up_btn_fpl.png);
+}
+
+QPushButton:pressed
+{
+	border-image:url(:/gui/images/g1000/dn_btn_fpl.png);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonKey_FMS_ENT">
+       <property name="geometry">
+        <rect>
+         <x>84</x>
+         <y>563</y>
+         <width>44</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>ENT Key</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	border-image:url(:/gui/images/g1000/up_btn_ent.png);
+}
+
+QPushButton:pressed
+{
+	border-image:url(:/gui/images/g1000/dn_btn_ent.png);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonKey_FMS_PROC">
+       <property name="geometry">
+        <rect>
+         <x>84</x>
+         <y>523</y>
+         <width>44</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>PROC Key</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	border-image:url(:/gui/images/g1000/up_btn_proc.png);
+}
+
+QPushButton:pressed
+{
+	border-image:url(:/gui/images/g1000/dn_btn_proc.png);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonKey_FMS_MENU">
+       <property name="geometry">
+        <rect>
+         <x>84</x>
+         <y>482</y>
+         <width>44</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>MENU Key</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	border-image:url(:/gui/images/g1000/up_btn_menu.png);
+}
+
+QPushButton:pressed
+{
+	border-image:url(:/gui/images/g1000/dn_btn_menu.png);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonKey_FMS_CLR">
+       <property name="geometry">
+        <rect>
+         <x>33</x>
+         <y>563</y>
+         <width>44</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>CLR Key (DFLT MAP)</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	border-image:url(:/gui/images/g1000/up_btn_clr.png);
+}
+
+QPushButton:pressed
+{
+	border-image:url(:/gui/images/g1000/dn_btn_clr.png);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="widgetLeft" native="true">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>150</width>
+        <height>720</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <widget class="QPushButton" name="buttonKnob_ALT">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>630</y>
+         <width>58</width>
+         <height>58</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>58</width>
+         <height>58</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>58</width>
+         <height>58</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Dual ALT Knob</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	border-image:url(:/gui/images/g1000/up_knob_dual.png);
+}
+
+QPushButton:pressed
+{
+	border-image:url(:/gui/images/g1000/dn_knob_dual.png);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonKnob_Vol_NAV">
+       <property name="geometry">
+        <rect>
+         <x>52</x>
+         <y>35</y>
+         <width>33</width>
+         <height>33</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>33</width>
+         <height>33</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>33</width>
+         <height>33</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>NAV VOL/ID Knob</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	border-image:url(:/gui/images/g1000/up_knob_vol.png);
+}
+
+QPushButton:pressed
+{
+	border-image:url(:/gui/images/g1000/dn_knob_vol.png);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonKnob_HDG">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>266</y>
+         <width>57</width>
+         <height>57</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>57</width>
+         <height>57</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>57</width>
+         <height>57</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Heading Knob</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	border-image:url(:/gui/images/g1000/up_knob_hdg.png);
+}
+
+QPushButton:pressed
+{
+	border-image:url(:/gui/images/g1000/dn_knob_hdg.png);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonKey_NAV">
+       <property name="geometry">
+        <rect>
+         <x>83</x>
+         <y>79</y>
+         <width>44</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>NAV Frequency Transfer Key</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	border-image:url(:/gui/images/g1000/up_btn_switch.png);
+}
+
+QPushButton:pressed
+{
+	border-image:url(:/gui/images/g1000/dn_btn_switch.png);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonKnob_NAV">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>133</y>
+         <width>58</width>
+         <height>58</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>58</width>
+         <height>58</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>58</width>
+         <height>58</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Dual NAV Knob</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	border-image:url(:/gui/images/g1000/up_knob_dual.png);
+}
+
+QPushButton:pressed
+{
+	border-image:url(:/gui/images/g1000/dn_knob_dual.png);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonKey_AP_AP">
+       <property name="geometry">
+        <rect>
+         <x>21</x>
+         <y>362</y>
+         <width>44</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>AP Key</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	border-image:url(:/gui/images/g1000/up_btn_ap.png);
+}
+
+QPushButton:pressed
+{
+	border-image:url(:/gui/images/g1000/dn_btn_ap.png);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonKey_AP_FD">
+       <property name="geometry">
+        <rect>
+         <x>72</x>
+         <y>362</y>
+         <width>44</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>FD Key</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	border-image:url(:/gui/images/g1000/up_btn_fd.png);
+}
+
+QPushButton:pressed
+{
+	border-image:url(:/gui/images/g1000/dn_btn_fd.png);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonKey_AP_HDG">
+       <property name="geometry">
+        <rect>
+         <x>21</x>
+         <y>402</y>
+         <width>44</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>HDG Key</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	border-image:url(:/gui/images/g1000/up_btn_hdg.png);
+}
+
+QPushButton:pressed
+{
+	border-image:url(:/gui/images/g1000/dn_btn_hdg.png);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonKey_AP_ALT">
+       <property name="geometry">
+        <rect>
+         <x>72</x>
+         <y>402</y>
+         <width>44</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>ALT Key</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	border-image:url(:/gui/images/g1000/up_btn_alt.png);
+}
+
+QPushButton:pressed
+{
+	border-image:url(:/gui/images/g1000/dn_btn_alt.png);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonKey_AP_NAV">
+       <property name="geometry">
+        <rect>
+         <x>21</x>
+         <y>442</y>
+         <width>44</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>NAV Key</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	border-image:url(:/gui/images/g1000/up_btn_nav.png);
+}
+
+QPushButton:pressed
+{
+	border-image:url(:/gui/images/g1000/dn_btn_nav.png);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonKey_AP_VNV">
+       <property name="geometry">
+        <rect>
+         <x>72</x>
+         <y>442</y>
+         <width>44</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>VNV Key</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	border-image:url(:/gui/images/g1000/up_btn_vnv.png);
+}
+
+QPushButton:pressed
+{
+	border-image:url(:/gui/images/g1000/dn_btn_vnv.png);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonKey_AP_APR">
+       <property name="geometry">
+        <rect>
+         <x>21</x>
+         <y>482</y>
+         <width>44</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>APR Key</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	border-image:url(:/gui/images/g1000/up_btn_apr.png);
+}
+
+QPushButton:pressed
+{
+	border-image:url(:/gui/images/g1000/dn_btn_apr.png);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonKey_AP_BC">
+       <property name="geometry">
+        <rect>
+         <x>72</x>
+         <y>482</y>
+         <width>44</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>BC Key</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	border-image:url(:/gui/images/g1000/up_btn_bc.png);
+}
+
+QPushButton:pressed
+{
+	border-image:url(:/gui/images/g1000/dn_btn_bc.png);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonKey_AP_VS">
+       <property name="geometry">
+        <rect>
+         <x>21</x>
+         <y>523</y>
+         <width>44</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>VS Key</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	border-image:url(:/gui/images/g1000/up_btn_vs.png);
+}
+
+QPushButton:pressed
+{
+	border-image:url(:/gui/images/g1000/dn_btn_vs.png);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonKey_AP_UP">
+       <property name="geometry">
+        <rect>
+         <x>72</x>
+         <y>523</y>
+         <width>44</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>NOSE UP Key</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	border-image:url(:/gui/images/g1000/up_btn_up.png);
+}
+
+QPushButton:pressed
+{
+	border-image:url(:/gui/images/g1000/dn_btn_up.png);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonKey_AP_FLC">
+       <property name="geometry">
+        <rect>
+         <x>21</x>
+         <y>563</y>
+         <width>44</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>FLC Key</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	border-image:url(:/gui/images/g1000/up_btn_flc.png);
+}
+
+QPushButton:pressed
+{
+	border-image:url(:/gui/images/g1000/dn_btn_flc.png);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buttonKey_AP_DN">
+       <property name="geometry">
+        <rect>
+         <x>72</x>
+         <y>563</y>
+         <width>44</width>
+         <height>29</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>44</width>
+         <height>29</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>NOSE DN Key</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton
+{
+	border-image:url(:/gui/images/g1000/up_btn_dn.png);
+}
+
+QPushButton:pressed
+{
+	border-image:url(:/gui/images/g1000/dn_btn_dn.png);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>WidgetCGI</class>
+   <extends>QWidget</extends>
+   <header>gui/WidgetCGI.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>buttonKnob_Vol_NAV</tabstop>
+  <tabstop>buttonKey_NAV</tabstop>
+  <tabstop>buttonKnob_NAV</tabstop>
+  <tabstop>buttonKnob_HDG</tabstop>
+  <tabstop>buttonKey_AP_AP</tabstop>
+  <tabstop>buttonKey_AP_FD</tabstop>
+  <tabstop>buttonKey_AP_HDG</tabstop>
+  <tabstop>buttonKey_AP_ALT</tabstop>
+  <tabstop>buttonKey_AP_NAV</tabstop>
+  <tabstop>buttonKey_AP_VNV</tabstop>
+  <tabstop>buttonKey_AP_APR</tabstop>
+  <tabstop>buttonKey_AP_BC</tabstop>
+  <tabstop>buttonKey_AP_VS</tabstop>
+  <tabstop>buttonKey_AP_UP</tabstop>
+  <tabstop>buttonKey_AP_FLC</tabstop>
+  <tabstop>buttonKey_AP_DN</tabstop>
+  <tabstop>buttonKnob_ALT</tabstop>
+  <tabstop>buttonKnob_Vol_COM</tabstop>
+  <tabstop>buttonKey_COM</tabstop>
+  <tabstop>buttonKnob_COM</tabstop>
+  <tabstop>buttonKnob_CRS</tabstop>
+  <tabstop>buttonKnob_FMS</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

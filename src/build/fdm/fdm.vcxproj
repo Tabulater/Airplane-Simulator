@@ -1,0 +1,476 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FD9C4F3A-448E-346C-AEBA-E45E2031C8B3}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>fdm</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Airplane Simulator\src\build\fdm\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">fdm.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">fdm</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Airplane Simulator\src\build\fdm\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">fdm.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">fdm</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Airplane Simulator\src\build\fdm\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">fdm.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">fdm</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Airplane Simulator\src\build\fdm\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">fdm.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">fdm</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Airplane Simulator\src\build\fdm;C:\Airplane Simulator\src\fdm;C:\Airplane Simulator\src\build\fdm\fdm_autogen\include_Debug;C:\Airplane Simulator\src\.;\include;C:\libxml2\include;C:\libxml2;C:\Program Files (x86)\OpenAL 1.1 SDK\include;C:\OSG\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -O3 -std=c++17</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);SIM_INTERSECTIONS;SIM_SKYDOME_SCALING;SIM_USE_THREADS;SIM_VERTICALSYNC;WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;HAVE_WINDOWS_CODEPAGE;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;SIM_INTERSECTIONS;SIM_SKYDOME_SCALING;SIM_USE_THREADS;SIM_VERTICALSYNC;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;HAVE_WINDOWS_CODEPAGE;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Airplane Simulator\src\build\fdm;C:\Airplane Simulator\src\fdm;C:\Airplane Simulator\src\build\fdm\fdm_autogen\include_Debug;C:\Airplane Simulator\src\.;\include;C:\libxml2\include;C:\libxml2;C:\Program Files (x86)\OpenAL 1.1 SDK\include;C:\OSG\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Airplane Simulator\src\build\fdm;C:\Airplane Simulator\src\fdm;C:\Airplane Simulator\src\build\fdm\fdm_autogen\include_Debug;C:\Airplane Simulator\src\.;\include;C:\libxml2\include;C:\libxml2;C:\Program Files (x86)\OpenAL 1.1 SDK\include;C:\OSG\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target fdm</Message>
+      <Command>setlocal
+cd "C:\Airplane Simulator\src\build\fdm"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen "C:/Airplane Simulator/src/build/fdm/CMakeFiles/fdm_autogen.dir/AutogenInfo.json" Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Airplane Simulator\src\build\fdm;C:\Airplane Simulator\src\fdm;C:\Airplane Simulator\src\build\fdm\fdm_autogen\include_Release;C:\Airplane Simulator\src\.;\include;C:\libxml2\include;C:\libxml2;C:\Program Files (x86)\OpenAL 1.1 SDK\include;C:\OSG\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -O3 -std=c++17</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);NDEBUG;SIM_INTERSECTIONS;SIM_SKYDOME_SCALING;SIM_USE_THREADS;SIM_VERTICALSYNC;WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;HAVE_WINDOWS_CODEPAGE;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;NDEBUG;SIM_INTERSECTIONS;SIM_SKYDOME_SCALING;SIM_USE_THREADS;SIM_VERTICALSYNC;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;HAVE_WINDOWS_CODEPAGE;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Airplane Simulator\src\build\fdm;C:\Airplane Simulator\src\fdm;C:\Airplane Simulator\src\build\fdm\fdm_autogen\include_Release;C:\Airplane Simulator\src\.;\include;C:\libxml2\include;C:\libxml2;C:\Program Files (x86)\OpenAL 1.1 SDK\include;C:\OSG\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Airplane Simulator\src\build\fdm;C:\Airplane Simulator\src\fdm;C:\Airplane Simulator\src\build\fdm\fdm_autogen\include_Release;C:\Airplane Simulator\src\.;\include;C:\libxml2\include;C:\libxml2;C:\Program Files (x86)\OpenAL 1.1 SDK\include;C:\OSG\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target fdm</Message>
+      <Command>setlocal
+cd "C:\Airplane Simulator\src\build\fdm"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen "C:/Airplane Simulator/src/build/fdm/CMakeFiles/fdm_autogen.dir/AutogenInfo.json" Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Airplane Simulator\src\build\fdm;C:\Airplane Simulator\src\fdm;C:\Airplane Simulator\src\build\fdm\fdm_autogen\include_MinSizeRel;C:\Airplane Simulator\src\.;\include;C:\libxml2\include;C:\libxml2;C:\Program Files (x86)\OpenAL 1.1 SDK\include;C:\OSG\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -O3 -std=c++17</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);NDEBUG;SIM_INTERSECTIONS;SIM_SKYDOME_SCALING;SIM_USE_THREADS;SIM_VERTICALSYNC;WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;HAVE_WINDOWS_CODEPAGE;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;NDEBUG;SIM_INTERSECTIONS;SIM_SKYDOME_SCALING;SIM_USE_THREADS;SIM_VERTICALSYNC;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;HAVE_WINDOWS_CODEPAGE;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Airplane Simulator\src\build\fdm;C:\Airplane Simulator\src\fdm;C:\Airplane Simulator\src\build\fdm\fdm_autogen\include_MinSizeRel;C:\Airplane Simulator\src\.;\include;C:\libxml2\include;C:\libxml2;C:\Program Files (x86)\OpenAL 1.1 SDK\include;C:\OSG\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Airplane Simulator\src\build\fdm;C:\Airplane Simulator\src\fdm;C:\Airplane Simulator\src\build\fdm\fdm_autogen\include_MinSizeRel;C:\Airplane Simulator\src\.;\include;C:\libxml2\include;C:\libxml2;C:\Program Files (x86)\OpenAL 1.1 SDK\include;C:\OSG\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target fdm</Message>
+      <Command>setlocal
+cd "C:\Airplane Simulator\src\build\fdm"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen "C:/Airplane Simulator/src/build/fdm/CMakeFiles/fdm_autogen.dir/AutogenInfo.json" MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Airplane Simulator\src\build\fdm;C:\Airplane Simulator\src\fdm;C:\Airplane Simulator\src\build\fdm\fdm_autogen\include_RelWithDebInfo;C:\Airplane Simulator\src\.;\include;C:\libxml2\include;C:\libxml2;C:\Program Files (x86)\OpenAL 1.1 SDK\include;C:\OSG\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -O3 -std=c++17</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);NDEBUG;SIM_INTERSECTIONS;SIM_SKYDOME_SCALING;SIM_USE_THREADS;SIM_VERTICALSYNC;WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;HAVE_WINDOWS_CODEPAGE;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;NDEBUG;SIM_INTERSECTIONS;SIM_SKYDOME_SCALING;SIM_USE_THREADS;SIM_VERTICALSYNC;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_USE_MATH_DEFINES;HAVE_WINDOWS_CODEPAGE;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Airplane Simulator\src\build\fdm;C:\Airplane Simulator\src\fdm;C:\Airplane Simulator\src\build\fdm\fdm_autogen\include_RelWithDebInfo;C:\Airplane Simulator\src\.;\include;C:\libxml2\include;C:\libxml2;C:\Program Files (x86)\OpenAL 1.1 SDK\include;C:\OSG\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Airplane Simulator\src\build\fdm;C:\Airplane Simulator\src\fdm;C:\Airplane Simulator\src\build\fdm\fdm_autogen\include_RelWithDebInfo;C:\Airplane Simulator\src\.;\include;C:\libxml2\include;C:\libxml2;C:\Program Files (x86)\OpenAL 1.1 SDK\include;C:\OSG\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC and UIC for target fdm</Message>
+      <Command>setlocal
+cd "C:\Airplane Simulator\src\build\fdm"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E cmake_autogen "C:/Airplane Simulator/src/build/fdm/CMakeFiles/fdm_autogen.dir/AutogenInfo.json" RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Airplane Simulator\src\fdm\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Airplane Simulator/src/fdm/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Airplane Simulator/src" "-BC:/Airplane Simulator/src/build" --check-stamp-file "C:/Airplane Simulator/src/build/fdm/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Airplane Simulator\src\build\fdm\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Airplane Simulator/src/fdm/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Airplane Simulator/src" "-BC:/Airplane Simulator/src/build" --check-stamp-file "C:/Airplane Simulator/src/build/fdm/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Airplane Simulator\src\build\fdm\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Airplane Simulator/src/fdm/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Airplane Simulator/src" "-BC:/Airplane Simulator/src/build" --check-stamp-file "C:/Airplane Simulator/src/build/fdm/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Airplane Simulator\src\build\fdm\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Airplane Simulator/src/fdm/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Airplane Simulator/src" "-BC:/Airplane Simulator/src/build" --check-stamp-file "C:/Airplane Simulator/src/build/fdm/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Airplane Simulator\src\build\fdm\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Airplane Simulator\src\build\fdm\fdm_autogen\mocs_compilation_Debug.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\fdm_Aerodynamics.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\fdm_Aircraft.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\fdm_Base.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\fdm_Controls.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\fdm_Environment.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\fdm_FDM.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\fdm_Input.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\fdm_Intersections.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\fdm_LandingGear.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\fdm_Log.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\fdm_Manager.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\fdm_Mass.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\fdm_Propulsion.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\fdm_Recorder.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\fdm_Test.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\auto\fdm_Autopilot.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\auto\fdm_FlightDirector.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\ctrl\fdm_BPF.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\ctrl\fdm_BSF.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\ctrl\fdm_Filter2.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\ctrl\fdm_HPF.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\ctrl\fdm_Lag.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\ctrl\fdm_Lag2.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\ctrl\fdm_Lead.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\ctrl\fdm_LeadLag.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\ctrl\fdm_LPF.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\ctrl\fdm_PID.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\models\fdm_AtmosphereICAO.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\models\fdm_AtmosphereUS76.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\models\fdm_Fuselage.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\models\fdm_Governor.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\models\fdm_HingeMoment.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\models\fdm_MainRotor.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\models\fdm_MainRotorBE.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\models\fdm_PistonEngine.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\models\fdm_Propeller.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\models\fdm_RotorBlade.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\models\fdm_Schrenk.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\models\fdm_SimpleRotor.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\models\fdm_StabilizerHor.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\models\fdm_StabilizerVer.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\models\fdm_TailOff.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\models\fdm_TailRotor.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\models\fdm_Turbofan.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\models\fdm_Wheel.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\models\fdm_WinchLauncher.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\models\fdm_WindShear.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\models\fdm_WingRunner.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\utils\fdm_Angles.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\utils\fdm_DataNode.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\utils\fdm_Endianness.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\utils\fdm_Geom.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\utils\fdm_Matrix3x3.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\utils\fdm_Matrix4x4.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\utils\fdm_Matrix6x6.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\utils\fdm_Mercator.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\utils\fdm_Oscillation.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\utils\fdm_Quaternion.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\utils\fdm_Random.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\utils\fdm_String.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\utils\fdm_Table1.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\utils\fdm_Table2.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\utils\fdm_Time.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\utils\fdm_Units.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\utils\fdm_Vector3.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\utils\fdm_Vector4.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\utils\fdm_Vector6.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\utils\fdm_VectorN.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\utils\fdm_WGS84.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\xml\fdm_XmlDoc.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\xml\fdm_XmlNode.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\fdm\xml\fdm_XmlUtils.cpp" />
+    <ClCompile Include="C:\Airplane Simulator\src\build\fdm\fdm_autogen\mocs_compilation_Release.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\build\fdm\fdm_autogen\mocs_compilation_MinSizeRel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="C:\Airplane Simulator\src\build\fdm\fdm_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Airplane Simulator\src\build\ZERO_CHECK.vcxproj">
+      <Project>{4A23EDA5-CD9B-3D6D-A76A-EF7B91E373C5}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

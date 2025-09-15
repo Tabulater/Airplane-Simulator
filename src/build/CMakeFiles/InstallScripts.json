@@ -1,0 +1,23 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Airplane Simulator/src/build/cmake_install.cmake",
+		"C:/Airplane Simulator/src/build/cgi/cmake_install.cmake",
+		"C:/Airplane Simulator/src/build/fdm/cmake_install.cmake",
+		"C:/Airplane Simulator/src/build/fdm_aw101/cmake_install.cmake",
+		"C:/Airplane Simulator/src/build/fdm_c130/cmake_install.cmake",
+		"C:/Airplane Simulator/src/build/fdm_c172/cmake_install.cmake",
+		"C:/Airplane Simulator/src/build/fdm_f16/cmake_install.cmake",
+		"C:/Airplane Simulator/src/build/fdm_f35a/cmake_install.cmake",
+		"C:/Airplane Simulator/src/build/fdm_p51/cmake_install.cmake",
+		"C:/Airplane Simulator/src/build/fdm_pw5/cmake_install.cmake",
+		"C:/Airplane Simulator/src/build/fdm_r44/cmake_install.cmake",
+		"C:/Airplane Simulator/src/build/fdm_uh60/cmake_install.cmake",
+		"C:/Airplane Simulator/src/build/g1000/cmake_install.cmake",
+		"C:/Airplane Simulator/src/build/gui/cmake_install.cmake",
+		"C:/Airplane Simulator/src/build/hid/cmake_install.cmake",
+		"C:/Airplane Simulator/src/build/nav/cmake_install.cmake",
+		"C:/Airplane Simulator/src/build/sfx/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

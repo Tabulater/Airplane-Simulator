@@ -1,0 +1,724 @@
+{
+	"AUTOGEN_COMMAND_LINE_LENGTH_MAX" : 32000,
+	"BUILD_DIR" : "C:/Airplane Simulator/src/build/fdm/fdm_autogen",
+	"CMAKE_BINARY_DIR" : "C:/Airplane Simulator/src/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "C:/Airplane Simulator/src/build/fdm",
+	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Airplane Simulator/src/fdm",
+	"CMAKE_EXECUTABLE" : "C:/Program Files/CMake/bin/cmake.exe",
+	"CMAKE_LIST_FILES" : [ "C:/Airplane Simulator/src/fdm/CMakeLists.txt" ],
+	"CMAKE_SOURCE_DIR" : "C:/Airplane Simulator/src",
+	"CROSS_CONFIG" : false,
+	"DEP_FILE" : "",
+	"DEP_FILE_RULE_NAME" : "",
+	"HEADERS" : 
+	[
+		[
+			"C:/Airplane Simulator/src/fdm/auto/fdm_Autopilot.h",
+			"MU",
+			"3NMJRBZ332/moc_fdm_Autopilot.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/auto/fdm_FlightDirector.h",
+			"MU",
+			"3NMJRBZ332/moc_fdm_FlightDirector.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/ctrl/fdm_BPF.h",
+			"MU",
+			"RBSCEXNBHO/moc_fdm_BPF.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/ctrl/fdm_BSF.h",
+			"MU",
+			"RBSCEXNBHO/moc_fdm_BSF.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/ctrl/fdm_Filter2.h",
+			"MU",
+			"RBSCEXNBHO/moc_fdm_Filter2.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/ctrl/fdm_HPF.h",
+			"MU",
+			"RBSCEXNBHO/moc_fdm_HPF.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/ctrl/fdm_LPF.h",
+			"MU",
+			"RBSCEXNBHO/moc_fdm_LPF.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/ctrl/fdm_Lag.h",
+			"MU",
+			"RBSCEXNBHO/moc_fdm_Lag.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/ctrl/fdm_Lag2.h",
+			"MU",
+			"RBSCEXNBHO/moc_fdm_Lag2.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/ctrl/fdm_Lead.h",
+			"MU",
+			"RBSCEXNBHO/moc_fdm_Lead.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/ctrl/fdm_LeadLag.h",
+			"MU",
+			"RBSCEXNBHO/moc_fdm_LeadLag.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/ctrl/fdm_PID.h",
+			"MU",
+			"RBSCEXNBHO/moc_fdm_PID.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/fdm_Aerodynamics.h",
+			"MU",
+			"EWIEGA46WW/moc_fdm_Aerodynamics.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/fdm_Aircraft.h",
+			"MU",
+			"EWIEGA46WW/moc_fdm_Aircraft.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/fdm_Base.h",
+			"MU",
+			"EWIEGA46WW/moc_fdm_Base.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/fdm_Controls.h",
+			"MU",
+			"EWIEGA46WW/moc_fdm_Controls.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/fdm_Environment.h",
+			"MU",
+			"EWIEGA46WW/moc_fdm_Environment.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/fdm_FDM.h",
+			"MU",
+			"EWIEGA46WW/moc_fdm_FDM.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/fdm_Input.h",
+			"MU",
+			"EWIEGA46WW/moc_fdm_Input.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/fdm_Intersections.h",
+			"MU",
+			"EWIEGA46WW/moc_fdm_Intersections.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/fdm_LandingGear.h",
+			"MU",
+			"EWIEGA46WW/moc_fdm_LandingGear.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/fdm_Log.h",
+			"MU",
+			"EWIEGA46WW/moc_fdm_Log.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/fdm_Manager.h",
+			"MU",
+			"EWIEGA46WW/moc_fdm_Manager.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/fdm_Mass.h",
+			"MU",
+			"EWIEGA46WW/moc_fdm_Mass.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/fdm_Propulsion.h",
+			"MU",
+			"EWIEGA46WW/moc_fdm_Propulsion.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/fdm_Recorder.h",
+			"MU",
+			"EWIEGA46WW/moc_fdm_Recorder.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/fdm_Test.h",
+			"MU",
+			"EWIEGA46WW/moc_fdm_Test.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/models/fdm_AtmosphereICAO.h",
+			"MU",
+			"IVK4DJNV27/moc_fdm_AtmosphereICAO.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/models/fdm_AtmosphereUS76.h",
+			"MU",
+			"IVK4DJNV27/moc_fdm_AtmosphereUS76.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/models/fdm_Fuselage.h",
+			"MU",
+			"IVK4DJNV27/moc_fdm_Fuselage.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/models/fdm_Governor.h",
+			"MU",
+			"IVK4DJNV27/moc_fdm_Governor.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/models/fdm_HingeMoment.h",
+			"MU",
+			"IVK4DJNV27/moc_fdm_HingeMoment.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/models/fdm_MainRotor.h",
+			"MU",
+			"IVK4DJNV27/moc_fdm_MainRotor.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/models/fdm_MainRotorBE.h",
+			"MU",
+			"IVK4DJNV27/moc_fdm_MainRotorBE.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/models/fdm_PistonEngine.h",
+			"MU",
+			"IVK4DJNV27/moc_fdm_PistonEngine.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/models/fdm_Propeller.h",
+			"MU",
+			"IVK4DJNV27/moc_fdm_Propeller.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/models/fdm_RotorBlade.h",
+			"MU",
+			"IVK4DJNV27/moc_fdm_RotorBlade.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/models/fdm_Schrenk.h",
+			"MU",
+			"IVK4DJNV27/moc_fdm_Schrenk.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/models/fdm_SimpleRotor.h",
+			"MU",
+			"IVK4DJNV27/moc_fdm_SimpleRotor.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/models/fdm_StabilizerHor.h",
+			"MU",
+			"IVK4DJNV27/moc_fdm_StabilizerHor.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/models/fdm_StabilizerVer.h",
+			"MU",
+			"IVK4DJNV27/moc_fdm_StabilizerVer.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/models/fdm_TailOff.h",
+			"MU",
+			"IVK4DJNV27/moc_fdm_TailOff.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/models/fdm_TailRotor.h",
+			"MU",
+			"IVK4DJNV27/moc_fdm_TailRotor.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/models/fdm_Turbofan.h",
+			"MU",
+			"IVK4DJNV27/moc_fdm_Turbofan.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/models/fdm_Wheel.h",
+			"MU",
+			"IVK4DJNV27/moc_fdm_Wheel.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/models/fdm_WinchLauncher.h",
+			"MU",
+			"IVK4DJNV27/moc_fdm_WinchLauncher.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/models/fdm_WindShear.h",
+			"MU",
+			"IVK4DJNV27/moc_fdm_WindShear.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/models/fdm_WingRunner.h",
+			"MU",
+			"IVK4DJNV27/moc_fdm_WingRunner.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/utils/fdm_Angles.h",
+			"MU",
+			"7HEHEGDA3T/moc_fdm_Angles.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/utils/fdm_DataNode.h",
+			"MU",
+			"7HEHEGDA3T/moc_fdm_DataNode.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/utils/fdm_Endianness.h",
+			"MU",
+			"7HEHEGDA3T/moc_fdm_Endianness.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/utils/fdm_Geom.h",
+			"MU",
+			"7HEHEGDA3T/moc_fdm_Geom.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/utils/fdm_Matrix3x3.h",
+			"MU",
+			"7HEHEGDA3T/moc_fdm_Matrix3x3.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/utils/fdm_Matrix4x4.h",
+			"MU",
+			"7HEHEGDA3T/moc_fdm_Matrix4x4.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/utils/fdm_Matrix6x6.h",
+			"MU",
+			"7HEHEGDA3T/moc_fdm_Matrix6x6.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/utils/fdm_Mercator.h",
+			"MU",
+			"7HEHEGDA3T/moc_fdm_Mercator.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/utils/fdm_Oscillation.h",
+			"MU",
+			"7HEHEGDA3T/moc_fdm_Oscillation.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/utils/fdm_Quaternion.h",
+			"MU",
+			"7HEHEGDA3T/moc_fdm_Quaternion.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/utils/fdm_Random.h",
+			"MU",
+			"7HEHEGDA3T/moc_fdm_Random.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/utils/fdm_String.h",
+			"MU",
+			"7HEHEGDA3T/moc_fdm_String.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/utils/fdm_Table1.h",
+			"MU",
+			"7HEHEGDA3T/moc_fdm_Table1.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/utils/fdm_Table2.h",
+			"MU",
+			"7HEHEGDA3T/moc_fdm_Table2.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/utils/fdm_Time.h",
+			"MU",
+			"7HEHEGDA3T/moc_fdm_Time.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/utils/fdm_Units.h",
+			"MU",
+			"7HEHEGDA3T/moc_fdm_Units.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/utils/fdm_Vector3.h",
+			"MU",
+			"7HEHEGDA3T/moc_fdm_Vector3.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/utils/fdm_Vector4.h",
+			"MU",
+			"7HEHEGDA3T/moc_fdm_Vector4.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/utils/fdm_Vector6.h",
+			"MU",
+			"7HEHEGDA3T/moc_fdm_Vector6.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/utils/fdm_VectorN.h",
+			"MU",
+			"7HEHEGDA3T/moc_fdm_VectorN.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/utils/fdm_WGS84.h",
+			"MU",
+			"7HEHEGDA3T/moc_fdm_WGS84.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/xml/fdm_XmlDoc.h",
+			"MU",
+			"YIBN5YZXA2/moc_fdm_XmlDoc.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/xml/fdm_XmlNode.h",
+			"MU",
+			"YIBN5YZXA2/moc_fdm_XmlNode.cpp",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/xml/fdm_XmlUtils.h",
+			"MU",
+			"YIBN5YZXA2/moc_fdm_XmlUtils.cpp",
+			null
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "C:/Airplane Simulator/src/build/fdm/fdm_autogen/include",
+	"INCLUDE_DIR_Debug" : "C:/Airplane Simulator/src/build/fdm/fdm_autogen/include_Debug",
+	"INCLUDE_DIR_MinSizeRel" : "C:/Airplane Simulator/src/build/fdm/fdm_autogen/include_MinSizeRel",
+	"INCLUDE_DIR_RelWithDebInfo" : "C:/Airplane Simulator/src/build/fdm/fdm_autogen/include_RelWithDebInfo",
+	"INCLUDE_DIR_Release" : "C:/Airplane Simulator/src/build/fdm/fdm_autogen/include_Release",
+	"MOC_COMPILATION_FILE" : "C:/Airplane Simulator/src/build/fdm/fdm_autogen/mocs_compilation.cpp",
+	"MOC_COMPILATION_FILE_Debug" : "C:/Airplane Simulator/src/build/fdm/fdm_autogen/mocs_compilation_Debug.cpp",
+	"MOC_COMPILATION_FILE_MinSizeRel" : "C:/Airplane Simulator/src/build/fdm/fdm_autogen/mocs_compilation_MinSizeRel.cpp",
+	"MOC_COMPILATION_FILE_RelWithDebInfo" : "C:/Airplane Simulator/src/build/fdm/fdm_autogen/mocs_compilation_RelWithDebInfo.cpp",
+	"MOC_COMPILATION_FILE_Release" : "C:/Airplane Simulator/src/build/fdm/fdm_autogen/mocs_compilation_Release.cpp",
+	"MOC_DEFINITIONS" : [],
+	"MOC_DEFINITIONS_Debug" : 
+	[
+		"HAVE_WINDOWS_CODEPAGE",
+		"SIM_INTERSECTIONS",
+		"SIM_SKYDOME_SCALING",
+		"SIM_USE_THREADS",
+		"SIM_VERTICALSYNC",
+		"WIN32",
+		"_CRT_SECURE_NO_DEPRECATE",
+		"_SCL_SECURE_NO_WARNINGS",
+		"_USE_MATH_DEFINES",
+		"_WINDOWS"
+	],
+	"MOC_DEFINITIONS_MinSizeRel" : 
+	[
+		"HAVE_WINDOWS_CODEPAGE",
+		"SIM_INTERSECTIONS",
+		"SIM_SKYDOME_SCALING",
+		"SIM_USE_THREADS",
+		"SIM_VERTICALSYNC",
+		"WIN32",
+		"_CRT_SECURE_NO_DEPRECATE",
+		"_SCL_SECURE_NO_WARNINGS",
+		"_USE_MATH_DEFINES",
+		"_WINDOWS"
+	],
+	"MOC_DEFINITIONS_RelWithDebInfo" : 
+	[
+		"HAVE_WINDOWS_CODEPAGE",
+		"SIM_INTERSECTIONS",
+		"SIM_SKYDOME_SCALING",
+		"SIM_USE_THREADS",
+		"SIM_VERTICALSYNC",
+		"WIN32",
+		"_CRT_SECURE_NO_DEPRECATE",
+		"_SCL_SECURE_NO_WARNINGS",
+		"_USE_MATH_DEFINES",
+		"_WINDOWS"
+	],
+	"MOC_DEFINITIONS_Release" : 
+	[
+		"HAVE_WINDOWS_CODEPAGE",
+		"SIM_INTERSECTIONS",
+		"SIM_SKYDOME_SCALING",
+		"SIM_USE_THREADS",
+		"SIM_VERTICALSYNC",
+		"WIN32",
+		"_CRT_SECURE_NO_DEPRECATE",
+		"_SCL_SECURE_NO_WARNINGS",
+		"_USE_MATH_DEFINES",
+		"_WINDOWS"
+	],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : [],
+	"MOC_INCLUDES_Debug" : 
+	[
+		"C:/Airplane Simulator/src/build/fdm",
+		"C:/Airplane Simulator/src/fdm",
+		"C:/Airplane Simulator/src",
+		"/include",
+		"C:/libxml2/include",
+		"C:/libxml2",
+		"C:/Program Files (x86)/OpenAL 1.1 SDK/include",
+		"C:/OSG/install/include"
+	],
+	"MOC_INCLUDES_MinSizeRel" : 
+	[
+		"C:/Airplane Simulator/src/build/fdm",
+		"C:/Airplane Simulator/src/fdm",
+		"C:/Airplane Simulator/src",
+		"/include",
+		"C:/libxml2/include",
+		"C:/libxml2",
+		"C:/Program Files (x86)/OpenAL 1.1 SDK/include",
+		"C:/OSG/install/include"
+	],
+	"MOC_INCLUDES_RelWithDebInfo" : 
+	[
+		"C:/Airplane Simulator/src/build/fdm",
+		"C:/Airplane Simulator/src/fdm",
+		"C:/Airplane Simulator/src",
+		"/include",
+		"C:/libxml2/include",
+		"C:/libxml2",
+		"C:/Program Files (x86)/OpenAL 1.1 SDK/include",
+		"C:/OSG/install/include"
+	],
+	"MOC_INCLUDES_Release" : 
+	[
+		"C:/Airplane Simulator/src/build/fdm",
+		"C:/Airplane Simulator/src/fdm",
+		"C:/Airplane Simulator/src",
+		"/include",
+		"C:/libxml2/include",
+		"C:/libxml2",
+		"C:/Program Files (x86)/OpenAL 1.1 SDK/include",
+		"C:/OSG/install/include"
+	],
+	"MOC_MACRO_NAMES" : 
+	[
+		"Q_OBJECT",
+		"Q_GADGET",
+		"Q_NAMESPACE",
+		"Q_NAMESPACE_EXPORT",
+		"Q_GADGET_EXPORT",
+		"Q_ENUM_NS"
+	],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : [],
+	"MOC_PREDEFS_FILE" : "",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : true,
+	"PARALLEL" : 8,
+	"PARSE_CACHE_FILE" : "C:/Airplane Simulator/src/build/fdm/CMakeFiles/fdm_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE_Debug" : "C:/Airplane Simulator/src/build/fdm/CMakeFiles/fdm_autogen.dir/ParseCache_Debug.txt",
+	"PARSE_CACHE_FILE_MinSizeRel" : "C:/Airplane Simulator/src/build/fdm/CMakeFiles/fdm_autogen.dir/ParseCache_MinSizeRel.txt",
+	"PARSE_CACHE_FILE_RelWithDebInfo" : "C:/Airplane Simulator/src/build/fdm/CMakeFiles/fdm_autogen.dir/ParseCache_RelWithDebInfo.txt",
+	"PARSE_CACHE_FILE_Release" : "C:/Airplane Simulator/src/build/fdm/CMakeFiles/fdm_autogen.dir/ParseCache_Release.txt",
+	"QT_MOC_EXECUTABLE" : "",
+	"QT_MOC_EXECUTABLE_Debug" : "C:/Qt/6.9.2/msvc2022_64/bin/moc.exe",
+	"QT_MOC_EXECUTABLE_MinSizeRel" : "C:/Qt/6.9.2/msvc2022_64/bin/moc.exe",
+	"QT_MOC_EXECUTABLE_RelWithDebInfo" : "C:/Qt/6.9.2/msvc2022_64/bin/moc.exe",
+	"QT_MOC_EXECUTABLE_Release" : "C:/Qt/6.9.2/msvc2022_64/bin/moc.exe",
+	"QT_UIC_EXECUTABLE" : "",
+	"QT_UIC_EXECUTABLE_Debug" : "C:/Qt/6.9.2/msvc2022_64/bin/uic.exe",
+	"QT_UIC_EXECUTABLE_MinSizeRel" : "C:/Qt/6.9.2/msvc2022_64/bin/uic.exe",
+	"QT_UIC_EXECUTABLE_RelWithDebInfo" : "C:/Qt/6.9.2/msvc2022_64/bin/uic.exe",
+	"QT_UIC_EXECUTABLE_Release" : "C:/Qt/6.9.2/msvc2022_64/bin/uic.exe",
+	"QT_VERSION_MAJOR" : 6,
+	"QT_VERSION_MINOR" : 9,
+	"SETTINGS_FILE" : "C:/Airplane Simulator/src/build/fdm/CMakeFiles/fdm_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE_Debug" : "C:/Airplane Simulator/src/build/fdm/CMakeFiles/fdm_autogen.dir/AutogenUsed_Debug.txt",
+	"SETTINGS_FILE_MinSizeRel" : "C:/Airplane Simulator/src/build/fdm/CMakeFiles/fdm_autogen.dir/AutogenUsed_MinSizeRel.txt",
+	"SETTINGS_FILE_RelWithDebInfo" : "C:/Airplane Simulator/src/build/fdm/CMakeFiles/fdm_autogen.dir/AutogenUsed_RelWithDebInfo.txt",
+	"SETTINGS_FILE_Release" : "C:/Airplane Simulator/src/build/fdm/CMakeFiles/fdm_autogen.dir/AutogenUsed_Release.txt",
+	"SOURCES" : 
+	[
+		[ "C:/Airplane Simulator/src/fdm/auto/fdm_Autopilot.cpp", "MU", null ],
+		[
+			"C:/Airplane Simulator/src/fdm/auto/fdm_FlightDirector.cpp",
+			"MU",
+			null
+		],
+		[ "C:/Airplane Simulator/src/fdm/ctrl/fdm_BPF.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/ctrl/fdm_BSF.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/ctrl/fdm_Filter2.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/ctrl/fdm_HPF.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/ctrl/fdm_LPF.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/ctrl/fdm_Lag.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/ctrl/fdm_Lag2.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/ctrl/fdm_Lead.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/ctrl/fdm_LeadLag.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/ctrl/fdm_PID.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/fdm_Aerodynamics.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/fdm_Aircraft.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/fdm_Base.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/fdm_Controls.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/fdm_Environment.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/fdm_FDM.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/fdm_Input.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/fdm_Intersections.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/fdm_LandingGear.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/fdm_Log.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/fdm_Manager.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/fdm_Mass.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/fdm_Propulsion.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/fdm_Recorder.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/fdm_Test.cpp", "MU", null ],
+		[
+			"C:/Airplane Simulator/src/fdm/models/fdm_AtmosphereICAO.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/models/fdm_AtmosphereUS76.cpp",
+			"MU",
+			null
+		],
+		[ "C:/Airplane Simulator/src/fdm/models/fdm_Fuselage.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/models/fdm_Governor.cpp", "MU", null ],
+		[
+			"C:/Airplane Simulator/src/fdm/models/fdm_HingeMoment.cpp",
+			"MU",
+			null
+		],
+		[ "C:/Airplane Simulator/src/fdm/models/fdm_MainRotor.cpp", "MU", null ],
+		[
+			"C:/Airplane Simulator/src/fdm/models/fdm_MainRotorBE.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/models/fdm_PistonEngine.cpp",
+			"MU",
+			null
+		],
+		[ "C:/Airplane Simulator/src/fdm/models/fdm_Propeller.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/models/fdm_RotorBlade.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/models/fdm_Schrenk.cpp", "MU", null ],
+		[
+			"C:/Airplane Simulator/src/fdm/models/fdm_SimpleRotor.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/models/fdm_StabilizerHor.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Airplane Simulator/src/fdm/models/fdm_StabilizerVer.cpp",
+			"MU",
+			null
+		],
+		[ "C:/Airplane Simulator/src/fdm/models/fdm_TailOff.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/models/fdm_TailRotor.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/models/fdm_Turbofan.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/models/fdm_Wheel.cpp", "MU", null ],
+		[
+			"C:/Airplane Simulator/src/fdm/models/fdm_WinchLauncher.cpp",
+			"MU",
+			null
+		],
+		[ "C:/Airplane Simulator/src/fdm/models/fdm_WindShear.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/models/fdm_WingRunner.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/utils/fdm_Angles.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/utils/fdm_DataNode.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/utils/fdm_Endianness.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/utils/fdm_Geom.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/utils/fdm_Matrix3x3.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/utils/fdm_Matrix4x4.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/utils/fdm_Matrix6x6.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/utils/fdm_Mercator.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/utils/fdm_Oscillation.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/utils/fdm_Quaternion.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/utils/fdm_Random.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/utils/fdm_String.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/utils/fdm_Table1.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/utils/fdm_Table2.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/utils/fdm_Time.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/utils/fdm_Units.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/utils/fdm_Vector3.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/utils/fdm_Vector4.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/utils/fdm_Vector6.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/utils/fdm_VectorN.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/utils/fdm_WGS84.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/xml/fdm_XmlDoc.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/xml/fdm_XmlNode.cpp", "MU", null ],
+		[ "C:/Airplane Simulator/src/fdm/xml/fdm_XmlUtils.cpp", "MU", null ]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"USE_BETTER_GRAPH" : true,
+	"VERBOSITY" : 0
+}

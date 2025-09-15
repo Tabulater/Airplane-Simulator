@@ -1,0 +1,10 @@
+^C:\AIRPLANE SIMULATOR\SRC\FDM_P51\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Airplane Simulator/src" "-BC:/Airplane Simulator/src/build" --check-stamp-file "C:/Airplane Simulator/src/build/fdm_p51/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

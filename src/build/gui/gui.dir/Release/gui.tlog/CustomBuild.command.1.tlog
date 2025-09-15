@@ -1,0 +1,22 @@
+^C:\AIRPLANE SIMULATOR\SRC\BUILD\CMAKEFILES\B22F50A1A026948F3E827EFA81CDCBC5\AUTOUIC_(CONFIG).STAMP.RULE
+setlocal
+cd "C:\Airplane Simulator\src\build\gui"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\AIRPLANE SIMULATOR\SRC\GUI\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Airplane Simulator/src" "-BC:/Airplane Simulator/src/build" --check-stamp-file "C:/Airplane Simulator/src/build/gui/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
